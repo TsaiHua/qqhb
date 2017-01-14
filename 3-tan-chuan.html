@@ -38,7 +38,7 @@
     line-height: 45px;
    background-color: #f5f5f5;
     font-size: 0.7rem;
-    color:#333333;
+    color:#605f5d;
     border-radius: 5px 5px 0 0;
    }
    .pop3 .popMain3 .popBottom3{
@@ -96,28 +96,18 @@
 </div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
-$(function(){
-    (function(){
-        var num;
-        $(".demo3").on('click', '.cal3-dashan', function(event) {
-            event.preventDefault();
-            num = $(this).index();
-            $(".pop3").fadeIn('fast');
-        });
-        $(".popBottom3").on('click', 'span', function(event) {
-            event.preventDefault();
-            if($(this).hasClass('confirm')){
-                $(".demo1 ul li").eq(num).remove();
-                num = "";
-                $(".pop3").fadeOut();
-            }else{
-                $(".pop3").fadeOut();
-                num = "";
-            }
-        });
-    })();
-    
-});
+$(document).ready(function(){
+     $(".cal3-dashan").on('click',function(){
+        $(".pop3").css("display","block")
+       })
+
+     $(".confirm3").on('click',function(){
+        $(".pop3").css("display","none")
+     })
+     $(".cancel3").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+ })
 </script>
 </body>
 </html>

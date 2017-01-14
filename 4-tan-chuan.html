@@ -9,7 +9,7 @@
     <meta http-equiv="Expires" content="Mon, 20 Jul 2018 23:00:00 GMT" />
     <link rel="stylesheet" href="libs/sui/css/sm.min.css">
     <link rel="stylesheet" href="css/style-plugin.css">
-    <link rel="stylesheet" type="text/css" href="css/qqhb-style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/qqhb-style.css"> -->
 
 <style type="text/css">
     .pop4{
@@ -42,7 +42,7 @@
    color: #f5f5f5;
   }
   .qqhb-dashang-ifon{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-top: 2.2rem;
     height: 2rem;
     color: #f5f5f5;
@@ -133,28 +133,26 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
-$(function(){
-    (function(){
-        var num;
-        $(".demo4").on('click', '.cal4-dashan', function(event) {
-            event.preventDefault();
-            num = $(this).index();
-            $(".pop4").fadeIn('fast');
-        });
-        $(".popBottom4").on('click', 'span', function(event) {
-            event.preventDefault();
-            if($(this).hasClass('confirm4')){
-                $(".demo1 ul li").eq(num).remove();
-                num = "";
-                $(".pop4").fadeOut();
-            }else{
-                $(".pop4").fadeOut();
-                num = "";
-            }
-        });
-    })();
-    
-});
+$(document).ready(function(){
+     $(".cal4-dashan").on('click',function(){
+        $(".pop4").css("display","block")
+       })
+
+     $(".qqhb-si-yi").on('click',function(){
+        $(".pop4").css("display","none")
+     })
+
+     $(".qqhb-si-er").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+       $(".qqhb-si-san").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+
+    $(".qqhb-si-si").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+ })
 </script>
 </body>
 </html>

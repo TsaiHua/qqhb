@@ -9,7 +9,6 @@
     <meta http-equiv="Expires" content="Mon, 20 Jul 2018 23:00:00 GMT" />
     <link rel="stylesheet" href="libs/sui/css/sm.min.css">
     <link rel="stylesheet" href="css/style-plugin.css">
-    <link rel="stylesheet" type="text/css" href="css/qqhb-style.css">
 
 <style type="text/css">
     .pop2{
@@ -34,7 +33,7 @@
     height: 68.5%;
    background-color: #f5f5f5;
     font-size: 0.8rem;
-    color:#333333;
+    color:#605f5d;
     line-height: 1.1rem;
     padding-top: 0.5rem;
     font-size: 0.7rem;
@@ -79,11 +78,9 @@
 </style>
 </head>
 <body>
-<div class="demo2">
-    <ul>
+
         <li class="cal2-dashan">弹出框-来迟了</li>
-    </ul>
-</div>
+
 <div class="pop2">
     <div class="popMain2">
         <!-- <div class="popTop"></div> -->
@@ -98,49 +95,26 @@
     </div>
 </div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
 <script type="text/javascript">
-$(function(){
-    (function(){
-        var num;
-        $(".demo2").on('click', '.cal2-dashan', function(event) {
-            event.preventDefault();
-            num = $(this).index();
-            $(".pop2").fadeIn('fast');
-        });
-        $(".popBottom2").on('click', 'span', function(event) {
-            event.preventDefault();
-            if($(this).hasClass('confirm2')){
-                $(".demo1 ul li").eq(num).remove();
-                num = "";
-                $(".pop2").fadeOut();
-            }else{
-                $(".pop2").fadeOut();
-                num = "";
-            }
-        });
-    })();
-    
-});
+
+$(document).ready(function(){
+     $(".cal2-dashan").on('click',function(){
+        $(".pop2").css("display","block")
+       })
+
+     $(".confirm2").on('click',function(){
+        $(".pop2").css("display","none")
+     })
+     $(".cancel2").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+ })
+
 </script>
 </body>
 </html>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--   <script type='text/javascript' src='libs/sui/js/zepto.min.js' charset='utf-8'></script>
-      <script type='text/javascript' src='libs/sui/js/sm.min.js' charset='utf-8'></script>
-     <script type='text/javascript' src='libs/sui/js/sm-extend.min.js' charset='utf-8'></script> -->
 </body>
 
 </html>

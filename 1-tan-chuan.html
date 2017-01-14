@@ -8,7 +8,7 @@
     <meta http-equiv="Expires" content="Mon, 20 Jul 2018 23:00:00 GMT" />
     <link rel="stylesheet" href="libs/sui/css/sm.min.css">
     <link rel="stylesheet" href="css/style-plugin.css">
-    <link rel="stylesheet" type="text/css" href="css/qqhb-style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/qqhb-style.css"> -->
   
 
 
@@ -76,11 +76,9 @@
 </style>
 </head>
 <body>
-<div class="demo1">
-    <ul>
-        <li class="cal-dashan">弹出框-打赏了小圈</li>
-    </ul>
-</div>
+
+<li class="cal-dashan">弹出框-打赏了小圈</li>
+ 
 <div class="pop">
     <div class="popMain">
         <!-- <div class="popTop"></div> -->
@@ -95,28 +93,19 @@
 </div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
-$(function(){
-    (function(){
-        var num;
-        $(".demo1").on('click', '.cal-dashan', function(event) {
-            event.preventDefault();
-            num = $(this).index();
-            $(".pop").fadeIn('fast');
-        });
-        $(".popBottom").on('click', 'span', function(event) {
-            event.preventDefault();
-            if($(this).hasClass('confirm')){
-                $(".demo1 ul li").eq(num).remove();
-                num = "";
-                $(".pop").fadeOut();
-            }else{
-                $(".pop").fadeOut();
-                num = "";
-            }
-        });
-    })();
-    
-});
+
+$(document).ready(function(){
+     $(".cal-dashan").on('click',function(){
+        $(".pop").css("display","block")
+       })
+
+     $(".confirm").on('click',function(){
+        $(".pop").css("display","none")
+     })
+     $(".cancel").on('click',function(){
+       window.open('http://www.baidu.com'); 
+     })
+ })
 </script>
 </body>
 </html>
