@@ -1,34 +1,60 @@
-item-title
 	/*全局CSS样式*/
 body{
 	margin: 0
 }
+.clear{
+	clear: both;
+}
 
+.font-7{
+	font-size: 0.7rem;
+}
+.col-20{
+	width: 18%;
+	margin-left: 2%;
+}
+.col-80{
+	width: 78%;
+	margin-left: 2%;
+}
+.col-70{
+	width: 68%;
+	margin-left: 2%;
+}
 /* 支付页CSS样式 */
 .pay_bg{
 	background:#ffcccc;
 }
 .box1{
-	/*width: 360px;*/
-	min-height: 150px;
+	width: 100%;
+	min-height: 140px;
+	position: relative;
 }
 .box2{
-  position:absolute;
-	top: -2px;
+	margin-top: -33%;
 	font-size: .8rem;
   width: 100%;
 	text-align: center;
 	color: #fff;
-}
-.imgbox{
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	overflow: hidden;
-	position: relative;
-	top: -62%;
-	left: 39%;
 	float: left;
+}
+.user-img{ 
+	position: relative;
+	z-index: 1200;
+	top: 8.2%;
+	left: 38.2%;
+	width: 4.1rem;
+	height: 4.1rem;
+	z-index: 300;
+	border-radius: 50%;
+}
+
+.imgbox{
+	width: 20.3%;
+	height: 77px;
+	background-color: #000;
+	/*position: relative;*/
+	top: 0;
 }
 
 /*感恩2016*/
@@ -74,12 +100,31 @@ body{
 .button-danger{
 	margin: 3rem;
 }
-.user-img{ 
-	position: absolute;
-	top: 8.2%;
-	left: 38.2%;
-	width: 4.1rem;
-	height: 4.1rem;
-	z-index: 300;
+
+/*手气页CSS*/
+.pay_shouqi{
+	top: 8rem;
+	left: 1.5rem;
+}
+.icon2{
+	background: url(../img/userimg.png);
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 }
+.shouqi{
+	color: #FF8C00;
+}
+
+.shouqipullright{
+	right: auto;
+}
+.shouqian-item{
+	display: block !important;
+}
+
+/*.shouqi-a{
+	height: 20px;
+	display: block;
+	width: 100%;
+}*/
