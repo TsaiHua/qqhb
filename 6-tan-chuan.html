@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="libs/sui/css/sm.min.css">
     <link rel="stylesheet" href="css/style-plugin.css">
     <link rel="stylesheet" type="text/css" href="css/qqhb-style.css">
-  
-
-
 
 <style type="text/css">
-    .pop3{
+    .pop6{
         display: none;
         position: fixed;
         top: 0;
@@ -25,44 +22,49 @@
         background: rgba(0, 0, 0, 0.8);
     }
 
-  .pop3 .popMain3{
-    width: 72%;
-    height: 80px;
-    margin:30% 0 0 14%;
+  .pop6 .popMain6{
+    width: 68%;
+    height: 135px;
+    margin:30% 0 0 16%;
   }
-   .pop3 .popMain3 .popMiddle3{
+   .pop6  .popMain6 .popMiddle6{
     width: 100%;
     text-align: center;
     margin: 0;
-    height: 59.5%;
-    line-height: 45px;
-   background-color: #f5f5f5;
-    font-size: 0.7rem;
+    height: 75.5%;
+    background-color: #f5f5f5;
+    font-size: 0.8rem;
     color:#333333;
-    border-radius: 5px 5px 0 0;
+    line-height: 1.2rem;
+    padding-top: 0.5rem;
+    font-size: 0.7rem;
+    border-radius:5px 5px 0 0;
    }
-   .pop3 .popMain3 .popBottom3{
+ 
+   .pop6  .popMain6 .popBottom6{
     width: 100%;
     margin: 0;
-    height: 40%;
+    height: 24%;
     line-height: 32px;
     font-size: 0.8rem;
-   
+    /*border-bottom: 1px solid #000;*/
    }
-.popBottom3 .confirm3{
+.popBottom6 .confirm6{
+     
     display: inline-block;
     width:49.7%;
     height: 100%;
     text-align: center;
     color: #f5f5f5;
-    background-color: #999999;
     margin: 0;
+    background-color: #999999;
     float: left;
     font-size: 0.7rem;
+    border-radius: 0 0 0 5px;
     margin-top: 0.5%;
-    border-radius:0 0  0 5px;
 }
-.popBottom3 .cancel3{
+.popBottom6 .cancel6{
+     margin-top: 0.5%;
     display: inline-block;
     width:49.7%;
     margin-left:0.6%;
@@ -71,26 +73,59 @@
     background-color: #ff3333;
     color: #ffcccc;
     font-size: 0.7rem;
-    margin-top: 0.5%;
-    border-radius:0 0 5px  0;
+    border-radius: 0 0 5px 0 ;
+}
+.qqhb-yue{
+    margin:0;
+   width: 100%;
+   height: 45%;
+   line-height: 19px;
+   color: #999999;
+   border-bottom: 1px #666 solid;
+}
+.qqhb-tixian{
+   text-indent: 0.5rem;
+   text-align: left;
+   margin:0;
+   width: 68%;
+   height: 55%;
+   line-height: 16px;
+   color: #666666;
+   float: left;
+   box-sizing:border-box;
+   padding-top: 0.5rem;
+   padding-left: 0.3rem;
+   overflow: hidden;
+}
+ .qqhb-erweima{
+    width: 3rem;
+    height: 2.2rem;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 0.6rem;
+
 }
 </style>
 </head>
 <body>
-<div class="demo3">
+<div class="demo6">
     <ul>
-        <li class="cal3-dashan">弹出框-查看</li>
+        <li class="cal6-dashan">弹出框-提现</li>
     </ul>
 </div>
-<div class="pop3">
-    <div class="popMain3">
+<div class="pop6">
+    <div class="popMain6">
         <!-- <div class="popTop"></div> -->
-        <div class="popMiddle3">
-            <p>提现成功！请前往微信零钱查看</p>
+        <div class="popMiddle6">
+            <p class="qqhb-yue">你的红包已发送到朋友圈</br>快叫朋友还抢吧！</p>
+
+        <a href=""><p class="qqhb-tixian">你发送的红包链接<br>www.quanquan.com</p></a>
+         <img class="qqhb-erweima" src="img/userimg.png">   
+
         </div>
-        <div class="popBottom3">
-            <span class="confirm3">确认</span>
-            <span class="cancel3">我也要发圈圈红包</span>
+        <div class="popBottom6">
+            <span class="confirm6">提现</span>
+            <span class="cancel6">取消</span>
         </div>
     </div>
 </div>
@@ -99,19 +134,19 @@
 $(function(){
     (function(){
         var num;
-        $(".demo3").on('click', '.cal3-dashan', function(event) {
+        $(".demo6").on('click', '.cal6-dashan', function(event) {
             event.preventDefault();
             num = $(this).index();
-            $(".pop3").fadeIn('fast');
+            $(".pop6").fadeIn('fast');
         });
-        $(".popBottom3").on('click', 'span', function(event) {
+        $(".popBottom6").on('click', 'span', function(event) {
             event.preventDefault();
-            if($(this).hasClass('confirm')){
+            if($(this).hasClass('confirm2')){
                 $(".demo1 ul li").eq(num).remove();
                 num = "";
-                $(".pop3").fadeOut();
+                $(".pop6").fadeOut();
             }else{
-                $(".pop3").fadeOut();
+                $(".pop6").fadeOut();
                 num = "";
             }
         });
@@ -121,6 +156,17 @@ $(function(){
 </script>
 </body>
 </html>
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
