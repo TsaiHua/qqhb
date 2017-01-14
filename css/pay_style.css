@@ -1,0 +1,85 @@
+item-title
+	/*全局CSS样式*/
+body{
+	margin: 0
+}
+
+/* 支付页CSS样式 */
+.pay_bg{
+	background:#ffcccc;
+}
+.box1{
+	/*width: 360px;*/
+	min-height: 150px;
+}
+.box2{
+  position:absolute;
+	top: -2px;
+	font-size: .8rem;
+  width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.imgbox{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top: -62%;
+	left: 39%;
+	float: left;
+}
+
+/*感恩2016*/
+.pay_text1{
+	color: #808080;
+	font-size: .6rem;
+	text-align: center;
+}
+
+.pay_a{
+	margin: 0 auto;
+	width: 85%;
+}
+.pay_a ul,.pay_a ul li .item-input input{
+	background: none;
+	font-size: .7rem!important;
+}
+.pay_a ul li{
+	margin-bottom: 1rem;
+	background: #fff;
+}
+.item-inner{
+	padding-right: .25rem;
+}
+.pay_input {
+	text-align: right;
+	width: 80% !important;
+	padding-right: 0.5rem;
+}
+.pay_span{
+	display: block;
+	margin-top:.6rem;
+}
+.align-top .pay_text{
+	font-size: .7rem;
+	color:#808080;
+	text-align: left;
+	padding-left: 0;
+}
+.list-block textarea{
+	height: 3rem;
+}
+.button-danger{
+	margin: 3rem;
+}
+.user-img{ 
+	position: absolute;
+	top: 8.2%;
+	left: 38.2%;
+	width: 4.1rem;
+	height: 4.1rem;
+	z-index: 300;
+	border-radius: 50%;
+}
