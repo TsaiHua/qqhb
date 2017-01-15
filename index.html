@@ -4,261 +4,131 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>牛匹选-首页</title>
+    <title>圈圈红包</title>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="Expires" content="Mon, 20 Jul 2018 23:00:00 GMT" />
     <link rel="stylesheet" href="libs/sui/css/sm.min.css">
-    <link rel="stylesheet" href="css/style-plugin.css">
     <link rel="stylesheet" type="text/css" href="css/qqhb2-style.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/awardRotate.js"></script>
-      <script type="text/javascript">
-        var turnplate={
-            restaraunts:[],       //大转盘奖品名称
-            colors:[],          //大转盘奖品区块对应背景颜色
-            outsideRadius:192,      //大转盘外圆的半径
-            textRadius:155,       //大转盘奖品位置距离圆心的距离
-            insideRadius:48,      //大转盘内圆的半径
-            startAngle:0,       //开始角度
-            bRotate:false       //false:停止;ture:旋转
-        };
-        // var img = new Image();
-        //    img.src = ; 
-
-    $(document).ready(function(){
-      //动态添加大转盘的奖品与奖品区域背景颜色
-      turnplate.restaraunts = ["", "", "", "", " ", "", "", ""];
-      turnplate.colors = [ "#ffcc66", "#ff9900", "#ffcc66","#ff9900","#ffcc66","#ff9900","#ffcc66","#ff9900"];
-
-      var rotateTimeOut = function (){
-        $('#wheelcanvas').rotate({
-          angle:0,
-          animateTo:2160,
-          duration:8000,
-          callback:function (){
-            alert('网络超时，请检查您的网络设置！');
-          }
-        });
-      };
-
-      //旋转转盘 item:奖品位置; txt：提示语;
-      var rotateFn = function (item, txt){
-        var angles = item * (360 / turnplate.restaraunts.length) - (360 / (turnplate.restaraunts.length*2));
-        if(angles<270){
-          angles = 270 - angles; 
-        }else{
-          angles = 360 - angles + 270;
-        }
-        $('#wheelcanvas').stopRotate();
-        $('#wheelcanvas').rotate({
-          angle:0,
-          animateTo:angles+1800,
-          duration:8000,
-          callback:function (){
-            alert(txt);
-            turnplate.bRotate = !turnplate.bRotate;
-          }
-        });
-      };
-
-      $('.pointer').click(function (){
-        if(turnplate.bRotate)return;
-        turnplate.bRotate = !turnplate.bRotate;
-        //获取随机数(奖品个数范围内)
-        var item = rnd(1,turnplate.restaraunts.length);
-        //奖品数量等于10,指针落在对应奖品区域的中心角度[252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
-        rotateFn(item, turnplate.restaraunts[item-1]);
-        /* switch (item) {
-          case 1:
-            rotateFn(252, turnplate.restaraunts[0]);
-            break;
-          case 2:
-            rotateFn(216, turnplate.restaraunts[1]);
-            break;
-          case 3:
-            rotateFn(180, turnplate.restaraunts[2]);
-            break;
-          case 4:
-            rotateFn(144, turnplate.restaraunts[3]);
-            break;
-          case 5:
-            rotateFn(108, turnplate.restaraunts[4]);
-            break;
-          case 6:
-            rotateFn(72, turnplate.restaraunts[5]);
-            break;
-          case 7:
-            rotateFn(36, turnplate.restaraunts[6]);
-            break;
-          case 8:
-            rotateFn(360, turnplate.restaraunts[7]);
-            break;
-          case 9:
-            rotateFn(324, turnplate.restaraunts[8]);
-            break;
-          case 10:
-            rotateFn(288, turnplate.restaraunts[9]);
-            break;
-        } */
-        console.log(item);
-      });
-    });
-
-    function rnd(n, m){
-      var random = Math.floor(Math.random()*(m-n+1)+n);
-      return random;
-      
-    }
-
-
-    //页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
-    window.onload=function(){
-      drawRouletteWheel();
-    };
-
-    function drawRouletteWheel() {    
-      var canvas = document.getElementById("wheelcanvas");    
-      if (canvas.getContext) {
-        //根据奖品个数计算圆周角度
-        var arc = Math.PI / (turnplate.restaraunts.length/2);
-        var ctx = canvas.getContext("2d");
-        //在给定矩形内清空一个矩形
-        ctx.clearRect(0,0,422,422);
-        //strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式  
-        ctx.strokeStyle = "#FFBE04";
-        //font 属性设置或返回画布上文本内容的当前字体属性
-        ctx.font = '16px Microsoft YaHei';      
-        for(var i = 0; i < turnplate.restaraunts.length; i++) {       
-          var angle = turnplate.startAngle + i * arc;
-          ctx.fillStyle = turnplate.colors[i];
-          ctx.beginPath();
-          //arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）    
-          ctx.arc(211, 211, turnplate.outsideRadius, angle, angle + arc, false);    
-          ctx.arc(211, 211, turnplate.insideRadius, angle + arc, angle, true);
-          ctx.stroke();  
-          ctx.fill();
-          //锁画布(为了保存之前的画布状态)
-          ctx.save();   
-          
-          //----绘制奖品开始----
-          ctx.fillStyle = "#E5302F";
-          var text = turnplate.restaraunts[i];
-          var line_height = 17;
-          //translate方法重新映射画布上的 (0,0) 位置
-          ctx.translate(211 + Math.cos(angle + arc / 2) * turnplate.textRadius, 211 + Math.sin(angle + arc / 2) * turnplate.textRadius);
-          
-          //rotate方法旋转当前的绘图
-          ctx.rotate(angle + arc / 2 + Math.PI / 2);
-          
-          /** 下面代码根据奖品类型、奖品名称长度渲染不同效果，如字体、颜色、图片效果。(具体根据实际情况改变) **/
-          if(text.indexOf("M")>0){//流量包
-            var texts = text.split("M");
-            for(var j = 0; j<texts.length; j++){
-              ctx.font = j == 0?'bold 20px Microsoft YaHei':'16px Microsoft YaHei';
-              if(j == 0){
-                ctx.fillText(texts[j]+"M", -ctx.measureText(texts[j]+"M").width / 2, j * line_height);
-              }else{
-                ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
-              }
-            }
-          }else if(text.indexOf("M") == -1 && text.length>6){//奖品名称长度超过一定范围 
-            text = text.substring(0,6)+"||"+text.substring(6);
-            var texts = text.split("||");
-            for(var j = 0; j<texts.length; j++){
-              ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
-            }
-          }else{
-            //在画布上绘制填色的文本。文本的默认颜色是黑色
-            //measureText()方法返回包含一个对象，该对象包含以像素计的指定字体宽度
-            ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
-          }
-          
-          //添加对应图标
-          if(text.indexOf("闪币")>0){
-            var img= document.getElementById("shan-img");
-            img.onload=function(){  
-              ctx.drawImage(img,-15,10);      
-            }; 
-            ctx.drawImage(img,-15,10);  
-          }else if(text.indexOf("谢谢参与")>=0){
-            var img= document.getElementById("sorry-img");
-            img.onload=function(){  
-              ctx.drawImage(img,-15,10);      
-            };  
-            ctx.drawImage(img,-15,10);  
-          }
-          //把当前画布返回（调整）到上一个save()状态之前 
-          ctx.restore();
-          //----绘制奖品结束----
-        }     
-      } 
-    }
-</script>
-
-
 
 </head>
 <body>
-   <header class="bar bar-nav qqhb-nav-bj">
+<!--    <header class="bar bar-nav qqhb-nav-bj">
         <a class=" pull-left qqhb-left-ximg"></a>
         <a class=" pull-right qqhb-right-ximg"><img src="img/ddd.png"></a>
         <h1 class="title" style="color:#F5F5F5;">圈圈红包</h1>
-   </header>
-
-     <!-- <div style="width:100%;height:3.5rem;"></div> -->
+   </header> -->
+<div class="content">
      <img class="qqhb-img-tubaio" src="img/img1.png">
+     
     <div class="qqhb-top-centert">
       <samp class="qqhb-denglong-left"></samp>
-      <p class="qqhb-zhufu"><span>某某某, </span>余额<span>1000</span>元<a href="#" class="qqnh-hongbao">我的红包</a></p>
+      <p class="qqhb-zhufu"><span>某某某, </span>余额<span>1000</span>元<a href="" class="qqnh-hongbao">我的红包</a></p>
       <samp class="qqhb-denglong-right"></samp>
       <div class="qqhb-ifon">
         <p class="qqhb-ifon-zhufu">某某某给大家发了<span class="qqhb-jinse">1000</span>元红包</br><span class="qqhb-jinse">祝大家,身体健康，万事如意</span></p>
       </div>
     </div>
-  
-<!-- <img src="img/hbao1-.png" class="shan-img" /> -->
-<!-- <img src="img/hbao1-.png" class="sorry-img" /> -->
-
-  <div class="banner">
-    <div class="turnplate" style="background-image:url(img/zhuanp-1.png);background-size:100% 100%;">
-    <canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
-    <img class="pointer" src="img/zhizhen.png"/>
+     
+     <p class="qqhb-zhufu-ni">给Ta的祝福 :</p>
+  <div class="qqhb-fa-hongbao-r">
+    <div class="qqhb-haobao-yi">
+      <samp class="qqhb-1-img cal4-dashan"><a>万事逍遥吊炸天</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>桃花连连美事多</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>金戈铁马创盛世</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>一生平安万事意</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>步步高升威八面</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>财神相随钱满箱</a></samp>
+     </div>
    </div>
- </div>
+
+  <div class="qqhb-shui-zhufu-wo"><a href="pay_zhufu2.html">查看祝福</a></div>
 
 
-   </div>
-
-   <div class="qqhb--inp-tit">
-
-        <p class="qqnh-wo-zhufu">给Ta送上一句祝福语:</p>
-      <div class="qqhb-inp-btn">
-         <button type="button" class="qqhn-fasongla1">查看祝福</button>
-         <input type="text" class="qqhb-shur" placeholder="感谢某某的红包">
-         <button type="button" class="qqhn-fasongla">发送</button>
-      </div>
-
-       <ul class="qqhn-title-bq">
-               <a href=""><li class="title-one">仗义</li></a>
-               <a href=""><li class="title-one wai-mar">豪气</li></a>
-               <a href=""><li class="title-one wai-mar">土豪</li></a>
-               <a href=""><li class="title-one wai-mar">豪气</li></a>
-                <a href=""><li class="title-one ">豪气</li></a>         
-        </ul>
-
-   </div>
   
    <div class="qqhb-con-btn">
-     <a href="pay.html" class="qqhb-wofa-one">我也要发圈圈红包</a>
+     <a href="pay2.html" class="qqhb-wofa-one">我也要发圈圈红包</a>
      <a href="" class="qqhb-fenx-two">分享有好礼哦！</a>
    </div>
 
 
-      <script type='text/javascript' src='libs/sui/js/zepto.min.js' charset='utf-8'></script>
-      <script type='text/javascript' src='libs/sui/js/sm.min.js' charset='utf-8'></script>
-     <script type='text/javascript' src='libs/sui/js/sm-extend.min.js' charset='utf-8'></script>
-</body>
 
+      <div class="pop4">
+          <div class="popMain4">
+             <p class="qqhn-sui-jian">恭喜你抽到了<span>1880</span>元</br>全场最佳</p>
+       
+           <!-- <div> -->
+                    <p class="qqhb-dashang-ifon">主人，手气真棒，打赏点小钱呗!</p>
+
+                 <ul class="qqhb-da-shang-fe">
+                   <a href=""><li class="qqhb-si-yi">狠心拒绝</li></a>
+
+                   <a href="#"><li class="qqhb-si-er"><span>1.8</span></br>一起发</li></a>
+
+                   <a href="#"><li class="qqhb-si-san"><span>2.8</span></br>爱发财</li></a>
+
+                   <a href="#"><li class="qqhb-si-si"><span>4.8</span></br>世世发</li></a>
+                 </ul>
+             <!-- </div> -->
+          </div>
+      </div>
+
+ <!--  /*打赏-确实*/ -->
+
+      <div class="pop">
+          <div class="popMain">
+              <!-- <div class="popTop"></div> -->
+              <div class="popMiddle">
+                  <p>感谢陛下打赏小圈的红包</p>
+              </div>
+              <div class="popBottom">
+                  <span class="confirm">确认</span>
+                  <span class="cancel">我也要发圈圈红包</span>
+              </div>
+          </div>
+     </div>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){
+     $(".cal4-dashan").on('click',function(){
+        $(".pop4").css("display","block")
+       })
+
+     $(".qqhb-si-yi").on('click',function(){
+        $(".pop4").css("display","none")
+     })
+
+     $(".qqhb-si-er").on('click',function(){
+        $(".pop").css("display","block"); 
+        $(".pop4").css("display","none");
+     })
+       $(".qqhb-si-san").on('click',function(){
+        $(".pop").css("display","block");
+        $(".pop4").css("display","none");
+     })
+
+    $(".qqhb-si-si").on('click',function(){
+       $(".pop").css("display","block");
+       $(".pop4").css("display","none");
+     })
+
+    // 打赏-确实 
+$(document).ready(function(){
+     $(".cal-dashan").on('click',function(){
+        $(".pop").css("display","block")
+       })
+
+     $(".confirm").on('click',function(){
+        $(".pop").css("display","none");
+        $(".pop4").css("display","none")
+     })
+     $(".cancel").on('click',function(){
+       // window.open('pay2.html'); 
+        document.location="pay2.html";  
+     })
+ })
+ })
+</script>
+</body>
 </html>
