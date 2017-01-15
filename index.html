@@ -36,38 +36,40 @@
       <samp class="qqhb-1-img cal4-dashan"><a>123423</a></samp>
       <samp class="qqhb-1-img cal4-dashan"><a>3213</a></samp>
       <samp class="qqhb-1-img cal4-dashan"><a>3244</a></samp>
-  
-     </div>
-
-     <div class="qqhb-haobao-er">
-        <samp class="qqhb-2-img cal4-dashan"><a>23124</a></samp>
-        <samp class="qqhb-2-img cal4-dashan"><a>32343</a></samp>
-        <samp class="qqhb-2-img cal4-dashan"><a>32134</a></samp>
-  
+      <samp class="qqhb-1-img cal4-dashan"><a>123423</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>3213</a></samp>
+      <samp class="qqhb-1-img cal4-dashan"><a>3244</a></samp>
      </div>
    </div>
 
-  <div class="qqhb-shui-zhufu-wo"><a href="pay_zhufu.html">查看祝福</a></div>
+  <div class="qqhb-shui-zhufu-wo"><a href="pay_zhufu2.html">查看祝福</a></div>
 
 
   
    <div class="qqhb-con-btn">
-     <a href="pay.html" class="qqhb-wofa-one">我也要发圈圈红包</a>
+     <a href="pay2.html" class="qqhb-wofa-one">我也要发圈圈红包</a>
      <a href="" class="qqhb-fenx-two">分享有好礼哦！</a>
    </div>
+
+
 
       <div class="pop4">
           <div class="popMain4">
              <p class="qqhn-sui-jian">恭喜你抽到了<span>1880</span>元</br>全场最佳</p>
-             <div>
-                 <p class="qqhb-dashang-ifon">主人，手气真棒，打赏点小钱呗!</p>
+       
+           <!-- <div> -->
+                    <p class="qqhb-dashang-ifon">主人，手气真棒，打赏点小钱呗!</p>
+
                  <ul class="qqhb-da-shang-fe">
                    <a href=""><li class="qqhb-si-yi">狠心拒绝</li></a>
+
                    <a href="#"><li class="qqhb-si-er"><span>1.8</span></br>一起发</li></a>
+
                    <a href="#"><li class="qqhb-si-san"><span>2.8</span></br>爱发财</li></a>
+
                    <a href="#"><li class="qqhb-si-si"><span>4.8</span></br>世世发</li></a>
                  </ul>
-             </div>
+             <!-- </div> -->
           </div>
       </div>
 
@@ -98,14 +100,17 @@ $(document).ready(function(){
      })
 
      $(".qqhb-si-er").on('click',function(){
-        $(".pop").css("display","block") 
+        $(".pop").css("display","block"); 
+        $(".pop4").css("display","none");
      })
        $(".qqhb-si-san").on('click',function(){
-        $(".pop").css("display","block") 
+        $(".pop").css("display","block");
+        $(".pop4").css("display","none");
      })
 
     $(".qqhb-si-si").on('click',function(){
-       $(".pop").css("display","block") 
+       $(".pop").css("display","block");
+       $(".pop4").css("display","none");
      })
 
     // 打赏-确实 
@@ -115,10 +120,12 @@ $(document).ready(function(){
        })
 
      $(".confirm").on('click',function(){
-        $(".pop").css("display","none")
+        $(".pop").css("display","none");
+        $(".pop4").css("display","none")
      })
      $(".cancel").on('click',function(){
-       window.open('pay.html'); 
+       // window.open('pay2.html'); 
+        document.location="pay2.html";  
      })
  })
  })
