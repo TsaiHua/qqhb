@@ -338,10 +338,11 @@ body{
     }
 
   .pop6 .popMain6{
-    width: 68%;
+  width: 68%;
     height: 135px;
-    margin:30% 0 0 16%;
+    margin:50% 0 0 16%;
   }
+ 
    .pop6  .popMain6 .popMiddle6{
     width: 100%;
     text-align: center;
