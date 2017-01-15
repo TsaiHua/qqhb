@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="css/pay_style.css">
   <script src="js/echarts.js"></script>
   <title>好友祝福</title>
-
 </head>
 
 <body class="pay_bg">
@@ -14,9 +13,6 @@
   <div class= "box1 pull-left">
     <img class="pull-left" src="img/pay_head.png" width="100%" height="100%">
     <p class="box2">好友祝福</p>
-    <!-- <div class="imgbox">
-    <img src="img/userimg.png"/>
-    </div> -->
   </div>
   <div class="clear"></div>
   <div id="main" style="width: auto;height:400px;"></div>
@@ -41,10 +37,13 @@
         }]
     };
     myChart.setOption(option);
+    window.onresize = function () {
+      myChart.resize();
+    }
   </script>
   <div class="pay_claim" style="font-size:0.7rem;">
-           <p>通过你的圈圈红包，挖掘了朋友圈<span>4个金主</span>，<span>5个土豪</span>，<span>6个大富豪</span>。</p>
-        </div>
+    <p>通过你的圈圈红包，挖掘了朋友圈<span>4个金主</span>，<span>5个土豪</span>，<span>6个大富豪</span>。</p>
   </div>
+</div>
 </body>
 </html>
