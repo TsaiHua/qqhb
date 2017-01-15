@@ -34,7 +34,7 @@
 	background-size: 2.8rem 5.4rem;
 	position: absolute;
 	left: 0rem;
-	top: 2.1rem;
+	top: 0.1rem;
 	width:  2.8rem;
 	height:  5.6rem;
 }
@@ -44,7 +44,7 @@
 	width: 1.6rem;
 	height:1.6rem;
 	position: absolute;
-	top: 3.1rem;
+	top: 1.1rem;
 	left: 0.6rem;
 	z-index: 100;
 
@@ -55,7 +55,7 @@
 	display: inline-block;
 	background:rgba(0,0,0,0.3);
 	position: absolute;
-	top: 3.2rem;
+	top: 1.2rem;
 	left: 2.6rem;
 	width: 70%;
 	font-size: 0.6rem;
@@ -86,17 +86,17 @@
 	background-size: 2.8rem  5.6rem;
 	position: absolute;
 	right:0rem;
-	top: 2.1rem;
+	top: 0.1rem;
 	width: 2.8rem;
 	height: 5.6rem;
 }
 
 .qqhb-top-centert .qqhb-ifon{
 	width: 65%;
-	height: 2.4rem;
+	height: 3rem;
 	/*background-color: #000;*/
 	position: absolute;
-	top: 5.8rem;
+	top: 3.3rem;
 	left: 3rem;
 	font-size: 0.7rem;
 	color: #f5f5f5;
@@ -108,6 +108,7 @@ color: #ffcc66;
 
 .qqhb-top-centert .qqhb-ifon .qqhb-ifon-zhufu{
 	margin: 0;
+	height: 100%;
 	text-align: center;
 	font-size: 0.7rem;
 	overflow: hidden;
@@ -116,7 +117,7 @@ color: #ffcc66;
 
 .qqhb-zhufu-ni{
 	margin: 0.5rem 0 ;
-	margin-top: 4rem;
+	margin-top: 2rem;
 	color: #ffcc66;
 	font-size: 0.7rem;
 	margin-left: 0.2rem;
@@ -154,7 +155,7 @@ color: #ffcc66;
 	padding-top: 2.1rem;
 	text-align: center;
 	font-size: 0.8rem;
-	color: rgb(107,8,8);
+	color: #ffcc66;
 }
 
 
@@ -246,6 +247,7 @@ color: #ffcc66;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 1000;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.8);
