@@ -7,6 +7,11 @@ body{
 	clear: both;
 }
 
+.pay_choose .pay_choose1 .pay_active{
+	background-color: #dc8100;
+	/*background-color: #8e4c0c;*/
+}
+
 .font-7{
 	font-size: 0.7rem;
 }
@@ -31,7 +36,8 @@ body{
 	display: inline-block;
 	width: 26.8%;
 	height: 20%;
-	border: 2px solid #8e4c0c;
+	border: 2px solid #dc8100;
+	/*border: 2px solid #8e4c0c;*/
 	border-radius: 4%;
 	text-align: center;
 	margin: .4rem .4rem;
@@ -39,6 +45,9 @@ body{
 }
 .pay_span1{
 	color: #e31512;
+}
+.pay_choose .pay_choose1 .pay_ap .pay_spanactive{
+	color: white;
 }
 .pay_span2{
 	color: #c44d4b;
@@ -109,7 +118,7 @@ body{
 	margin-left: 40.4%;
 	float: left;
 }
-.user-img{ 
+.user-img{
 	position: relative;
 	z-index: 1200;
 	top: 8.2%;
@@ -252,7 +261,7 @@ body{
     font-size: 0.7rem;
     border-radius:5px 5px 0 0;
    }
- 
+
    .pop6  .popMain6 .popBottom6{
     width: 100%;
     margin: 0;
@@ -262,7 +271,7 @@ body{
     /*border-bottom: 1px solid #000;*/
    }
 .popBottom6 .confirm6{
-     
+
     display: inline-block;
     width:49.7%;
     height: 100%;
@@ -346,7 +355,7 @@ body{
     font-size: 0.7rem;
     border-radius:5px 5px 0 0;
    }
- 
+
    .pop6  .popMain6 .popBottom6{
     width: 100%;
     margin: 0;
@@ -356,7 +365,7 @@ body{
     /*border-bottom: 1px solid #000;*/
    }
 .popBottom6 .confirm6{
-     
+
     display: inline-block;
     width:49.7%;
     height: 100%;
