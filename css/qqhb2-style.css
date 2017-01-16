@@ -2,7 +2,7 @@
 .content{
     background-size:100%  750px;
     /*background-size:100%  640px;*/
-	background-image: url(../img/bg_xxhdpi.jpg);width:100%;
+	background-image: url(../img/bg_xxhdpi.jpg);
 	background-repeat:no-repeat;
 	/*background:rgb(107,8,8);*/
 	width: 100%;
@@ -47,8 +47,8 @@
 	top: 1.1rem;
 	left: 0.6rem;
 	z-index: 100;
-
 }
+
 
 .qqhb-top-centert .qqhb-zhufu{
 	margin: 0;
@@ -67,13 +67,12 @@
 	text-indent: 0.2rem;
 }
 
-.qqnh-hongbao{
 
+.qqnh-hongbao{
 	color: #ffcc66;
 	display: inline-block;
 	float: right;
-	margin-right: 0.8rem;
-	
+	margin-right: 0.8rem;	
 }
 
 .qqhb-zhufu a:hover{
@@ -94,7 +93,6 @@
 .qqhb-top-centert .qqhb-ifon{
 	width: 65%;
 	height: 3rem;
-	/*background-color: #000;*/
 	position: absolute;
 	top: 3.3rem;
 	left: 3rem;
@@ -158,24 +156,13 @@ color: #ffcc66;
 	color: #ffcc66;
 }
 
-
-/*.qqhb-haobao-er .qqhb-2-img{
-	background-image:url(../img/ui_hongbao.png);
-	background-repeat: no-repeat;
-	display: inline-block;	
-	background-size: 100% auto;
-	width: 27.5%;
-	height:100%;
-	margin:0 2.2%;
-
-}
-*/
 .qqhb-shui-zhufu-wo{
 	width: 100%;
 	height: 1.4rem;
 	text-align: center;
 	margin-top: 2.3rem;
 }
+
 .qqhb-shui-zhufu-wo a{
 	margin: 0 auto;
 	display: inline-block;
@@ -254,7 +241,7 @@ color: #ffcc66;
     }
 
   .popMain4{
-    background-size:100% 70%;
+    background-size:100% 80%;
     background-image: url(../img/ui_tanchuanghongbao.png);
     background-repeat: no-repeat;
     width:76%;
@@ -321,7 +308,7 @@ color: #ffcc66;
 
     }
      .qqhb-da-shang-fe .qqhb-si-san{
-        width: 23%;
+        width: 23.5%;
         text-align: center;
         font-size: 0.7rem;
         line-height: 1.1rem;
