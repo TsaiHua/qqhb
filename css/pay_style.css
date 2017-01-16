@@ -10,7 +10,6 @@ body{
 }
 .pay_choose .pay_choose1 .pay_active{
 	background-color: #dc8100;
-	/*background-color: #8e4c0c;*/
 }
 .font-7{
 	font-size: 0.7rem;
@@ -29,6 +28,19 @@ body{
 	margin-left: 2%;
 }
 /* 支付页CSS样式 */
+.pay_button{
+	background-color: #af2217;/*收到祝福按钮背景色*/
+	text-align: center;
+	margin: .4rem .4rem;
+	float: left;
+	color: #dc8100;
+}
+.pay_button1{
+	color: #dc8100;
+}
+.pay_button2{
+	color: #dc8100;
+}
 
 .pay_bg{
 	background:#ffcccc;
@@ -38,7 +50,6 @@ body{
 	width: 26.8%;
 	height: 20%;
 	border: 2px solid #dc8100;
-	/*border: 2px solid #8e4c0c;*/
 	border-radius: 4%;
 	text-align: center;
 	margin: .4rem .4rem;
@@ -111,7 +122,21 @@ body{
 	float: right;
 	margin-top: -38%;
 }
+.pay_help_text a{
+	color: black;
+	margin-left: 1rem;
+	line-height: 2rem;
+}
+.pay_help_text p{
+	color:#696969;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	line-height: 2rem;
+}
 
+.list-block {
+	margin:0;/*帮助页*/
+}
 .imgbox{
 	width: 20.3%;
 	height: 77px;
@@ -194,10 +219,6 @@ body{
 	margin: 3rem;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 /*手气页CSS*/
 .pay_shouqi{
 	top: 8rem;
@@ -391,7 +412,7 @@ body{
    height: 4rem;
    margin: 0 auto;
    line-height: 1rem;
- 
+
 }
 
 .qqhb-bj-fx .qqhb-tixian1 span{
