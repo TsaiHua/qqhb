@@ -80,7 +80,10 @@ body{
 	width: 100%;
 }
 
-
+.chakanshouqi{
+	padding-left: 1rem;
+	font-size: .7rem;
+}
 .clear{
 	clear: both;
 }
