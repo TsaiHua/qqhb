@@ -382,3 +382,12 @@ color: #ffcc66;
     font-size: 0.9rem;
     /*font-weight: bold;*/
 }
+
+.qianwanliao{
+    display:inline-block;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #fff;
+    /*height: 2rem;*/
+}
