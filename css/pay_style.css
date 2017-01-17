@@ -6,6 +6,7 @@
 	width: 100%;
 	min-height: 140px;
 	position: relative;
+	line-height: .5rem;
 }
 .pay_help_icon{
 	width: 6%;
@@ -34,12 +35,10 @@
 	margin: 1.75rem 1rem;
 }
 .col-20{
-	width: 18%;
-	margin-left: 2%;
+	width: 20%;
 }
 .col-80{
 	width: 78%;
-	margin-left: 2%;
 }
 .col-70{
 	width: 68%;
@@ -48,12 +47,14 @@
 /*提现页*/
 .pay_dashang{
   display: inline-block;
-  margin: auto 4rem;
+  margin: auto;
+	width: 80%;
 }
 .button_dashang{
 	border-color: #d28988;
 	background-color: #d28988;
 	color: #d0c907;
+	margin-left: .5rem;
 }
 .button_dashang:active{
 	border-color: #d28988;
@@ -117,14 +118,6 @@
 .chakanshouqi{
 	padding-left: 1rem;
 	font-size: .7rem;
-}
-.col-20{
-	width: 18%;
-	margin-left: 2%;
-}
-.col-80{
-	width: 78%;
-	margin-left: 2%;
 }
 /* 支付页CSS样式 */
 .choose6{
