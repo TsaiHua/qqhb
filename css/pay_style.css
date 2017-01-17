@@ -10,8 +10,8 @@
 .pay_help_icon{
 	width: 6%;
 	position: absolute;
-	top: .2rem;
-	right: .2rem;
+	top: .8rem;
+	right: 1rem;
 }
 .pay_checkbox{
 	font-size: .7rem;
@@ -22,9 +22,6 @@
 	background: red;
 	color: white;
 	text-align: center;
-}
-.clear{
-	clear: both;
 }
 .clear{
 	clear: both;
@@ -47,6 +44,25 @@
 .col-70{
 	width: 68%;
 	margin-left: 2%;
+}
+/*提现页*/
+.pay_dashang{
+  display: inline-block;
+  margin: auto 4rem;
+}
+.button_dashang{
+	border-color: #d28988;
+	background-color: #d28988;
+	color: #d0c907;
+}
+.button_dashang:active{
+	border-color: #d28988;
+	background-color: #d28988;
+	color: #d0c907;
+}
+.pay_dashang .dashang_active{
+	background-color: #621918;
+	color: white;
 }
 /* 支付页CSS样式 */
 .pay_button{
@@ -102,20 +118,12 @@
 	padding-left: 1rem;
 	font-size: .7rem;
 }
-.clear{
-	clear: both;
-}
-
 .col-20{
 	width: 18%;
 	margin-left: 2%;
 }
 .col-80{
 	width: 78%;
-	margin-left: 2%;
-}
-.col-70{
-	width: 68%;
 	margin-left: 2%;
 }
 /* 支付页CSS样式 */
@@ -241,6 +249,7 @@
 }
 .shouqi{
 	color: #FF8C00;
+	text-align: right;
 }
 
 .shouqipullright{
@@ -249,31 +258,6 @@
 .shouqian-item{
 	display: block !important;
 }
-
-/*.shouqi-a{
-	height: 20px;
-	display: block;
-	width: 100%;
-}*/
-
-.shouqi{
-	color: #FF8C00;
-}
-
-.shouqipullright{
-	right: auto;
-}
-.shouqian-item{
-	display: block !important;
-}
-
-/*.shouqi-a{
-	height: 20px;
-	display: block;
-	width: 100%;
-}*/
-
-
 .icon3{
 	background: url(../img/qqhb-icon.png);
 	width: 50px;
