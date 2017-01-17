@@ -5,6 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="css/sm.min.css">
   <link rel="stylesheet" type="text/css" href="css/pay_style.css">
+  <link rel="stylesheet" type="text/css" href="css/qqhb2-style.css">
   <title>提现</title>
 </head>
 <body class="pay_bg">
@@ -52,8 +53,36 @@
       <a href="#" class="pull-left button button_dashang">打赏3.8</a>
       </div>
     <div class="buttonbox">
-      <a href="#" class="button button-fill button-danger cal6-dashan">确认提现到微信零钱</a>
+      <a href="#" onclick="ShowDiv('MyDiv','fade')" class="button button-fill button-danger cal6-dashan">确认提现到微信零钱</a>
     </div>
 </div>
+<!--   <input id="Button1" type="button" value="点击弹出层" onclick="ShowDiv('MyDiv','fade')" /> -->
+ 
+   <!--弹出层时背景层DIV-->
+   <div id="fade" class="black_overlay" onclick="CloseDiv('MyDiv','fade')">
+
+   <div id="MyDiv" class="white_content2 white_contenttop2">
+       <p class="text-conter"><img src="img/ui_tixcz.png" width="200"></p>
+       <p class="color-white text-conter size-6">系统将会在2小时内派发到您的微信零钱，请及时查看！</p>
+     </div>
+  </div>
+
+<script type="text/javascript">
+   //弹出隐藏层
+   function ShowDiv(show_div,bg_div){
+   document.getElementById(show_div).style.display='block';
+   document.getElementById(bg_div).style.display='block' ;
+   var bgdiv = document.getElementById(bg_div);
+   bgdiv.style.width = document.body.scrollWidth;
+   // bgdiv.style.height = $(document).height();
+   $("#"+bg_div).height($(document).height());
+   };
+   //关闭弹出层
+   function CloseDiv(show_div,bg_div)
+   {
+   document.getElementById(show_div).style.display='none';
+   document.getElementById(bg_div).style.display='none';
+   };
+   </script>
 </body>
 </html>
