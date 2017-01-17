@@ -18,6 +18,11 @@
 	font-size: .7rem;
 	text-align: center;
 }
+.btn_size{
+	line-height: 1.6rem!important;
+	height: 1.6rem;
+	font-size: .8rem;
+}
 /*祝福页*/
 .zhufu_total_p{
 	background: red;
