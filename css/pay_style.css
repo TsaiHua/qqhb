@@ -1,6 +1,23 @@
-	/*全局CSS样式*/
-body{
-	margin: 0
+/*支付页样式*/
+.pay_bg{
+	background:#fdfaf3;
+}
+.box_head{
+	width: 100%;
+	min-height: 140px;
+	position: relative;
+}
+.pay_help_icon{
+	width: 6%;
+	position: absolute;
+	top: .2rem;
+	right: .2rem;
+}
+/*祝福页*/
+.zhufu_total_p{
+	background: red;
+	color: white;
+	text-align: center;
 }
 .clear{
 	clear: both;
@@ -42,9 +59,6 @@ body{
 	color: #dc8100;
 }
 
-.pay_bg{
-	background:#ffcccc;
-}
 .pay_ap{
 	display: inline-block;
 	width: 26.8%;
@@ -107,11 +121,7 @@ body{
 	font-size: .7rem;
 }
 
-.box1{
-	width: 100%;
-	min-height: 140px;
-	position: relative;
-}
+
 .box2{
 	margin-top: -33%;
 	font-size: .8rem;
@@ -120,11 +130,7 @@ body{
 	color: #fff;
 	float: left;
 }
-.pay_help_icon{
-	width: 8%;
-	float: right;
-	margin-top: -38%;
-}
+
 .pay_help_text a{
 	color: black;
 	margin-left: 1rem;
@@ -141,14 +147,15 @@ body{
 	margin:0;/*帮助页*/
 }
 .imgbox{
-	width: 20.3%;
-	height: 77px;
+	width: 21.3%;
+	/*height: 77px;*/
 	border-radius: 50%;
 	overflow: hidden;
-	margin-top: -22.8%;
-	margin-left: 40.4%;
+	margin-top: -23.8%;
+  margin-left: 39.4%;
 	float: left;
 }
+
 .user-img{
 	position: relative;
 	z-index: 1200;
@@ -160,13 +167,7 @@ body{
 	border-radius: 50%;
 }
 
-.imgbox{
-	width: 20.3%;
-	height: 77px;
-	background-color: #000;
-	/*position: relative;*/
-	top: 0;
-}
+
 
 /*感恩2016*/
 .pay_text1{
@@ -204,12 +205,13 @@ body{
 	color:#808080;
 	text-align: left;
 	padding-left: 0;
+	height: 3rem;
 }
 .list-block textarea{
 	height: 3rem 1rem;
 }
 .button-danger{
-	margin: 1rem;
+	margin: .5rem;
 }
 .pay_claim{
 	height: 5rem;
@@ -219,7 +221,6 @@ body{
 }
 .buttonbox{
 	margin: auto 2rem;
-	margin: 3rem;
 }
 
 /*手气页CSS*/
