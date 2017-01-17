@@ -162,7 +162,7 @@
 	border-radius: 50%;
 	overflow: hidden;
 	margin-top: -23.8%;
-  margin-left: 39.4%;
+    margin-left: 39.4%;
 	float: left;
 }
 
@@ -362,8 +362,6 @@
 
 }
 
-
-<<<<<<< HEAD
   .pop6 .popMain6{
   width: 68%;
     height: 135px;
@@ -383,9 +381,9 @@
     font-size: 0.7rem;
     border-radius:5px 5px 0 0;
    }
-=======
+
 /*分享*/
->>>>>>> master
+
 
 
 
@@ -398,11 +396,12 @@
 }
 
 .qqhb-bj-fx .qqhb-tixian1{
-  padding-top: 1rem;
+  padding-top:5rem;
    height: 4rem;
    margin: 0 auto;
+   margin-bottom: 1rem;
    line-height: 1rem;
-
+   font-size: 0.8rem;
 }
 
 .qqhb-bj-fx .qqhb-tixian1 span{
@@ -411,4 +410,53 @@
 
 .qqhb-bj-fx img{
   width: 5rem;height: 4rem;
+}
+
+.top-title-nav{
+	padding:0;
+	margin:0;
+	position: absolute;
+	left: 33%;
+	top: 16%;
+	color: #f5f5f5;
+}
+
+.fx-con{
+	height: 36%;
+	width: 100%;
+	/*background-color: #eee;*/
+	text-align: center;
+}
+
+.fx-linjie{
+	height: 20%;
+	text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+}
+ .fx-linjie span{
+ 	color: #ff3333;
+}
+.fx-con img{
+	display: inline-block;
+	text-align: center;
+	width: 7rem;
+	height: 6rem;
+}
+
+
+.button-ann{
+	/*width: 100%;*/
+	text-align: center;
+	color: #f5f5f5;
+   /*background-color: #eee;*/
+}
+
+.button-ann button{
+	display: inline-block;
+	border: 0;
+	width: 70%;
+	height: 30%;
+	color: #999;
+	text-align: center;
 }
