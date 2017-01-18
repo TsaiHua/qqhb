@@ -138,9 +138,6 @@ color: #ffcc66;
 	padding: 0 0.5rem;
 }
 
-
-
-
 .qqhb-haobao-yi .qqhb-1-img{
 	background-image:url(../img/ui_hongbao.png);
 	background-repeat: no-repeat;
@@ -166,7 +163,7 @@ color: #ffcc66;
 
 
 
-@media screen and (min-width:639px ) {
+@media screen and (min-width:630px ) {
   .qqhb-fa-hongbao-r{
               height: 24rem;
             }
