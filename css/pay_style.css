@@ -401,15 +401,10 @@
 
 /*分享*/
 
-
-
-
-
 .qqhb-bj-fx{
   background: #f5f5f5;
    height: 36%;
    width: 80%;
-
 }
 
 .qqhb-bj-fx .qqhb-tixian1{
@@ -441,7 +436,6 @@
 .fx-con{
 	height: 36%;
 	width: 100%;
-	/*background-color: #eee;*/
 	text-align: center;
 }
 
@@ -463,10 +457,9 @@
 
 
 .button-ann{
-	/*width: 100%;*/
 	text-align: center;
 	color: #f5f5f5;
-   /*background-color: #eee;*/
+  
 }
 
 .button-ann button{
