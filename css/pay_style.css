@@ -146,16 +146,15 @@
 	float: left;
 }
 
-.pay_help_text a{
-	color: black;
-	margin-left: 1rem;
-	line-height: 2rem;
+.pay_help_indent{
+	margin: 1rem 1rem;
 }
 .pay_help_text p{
 	color:#696969;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	line-height: 2rem;
+	text-indent: 2em;
 }
 
 .list-block {
