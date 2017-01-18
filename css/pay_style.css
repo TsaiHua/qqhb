@@ -29,6 +29,10 @@
 	color: white;
 	text-align: center;
 }
+.btn_nonehongbao{
+	width: 50%;
+	margin: 2rem auto!important;
+}
 .clear{
 	clear: both;
 }
@@ -142,16 +146,15 @@
 	float: left;
 }
 
-.pay_help_text a{
-	color: black;
-	margin-left: 1rem;
-	line-height: 2rem;
+.pay_help_indent{
+	margin: 1rem 1rem;
 }
 .pay_help_text p{
 	color:#696969;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	line-height: 2rem;
+	text-indent: 2em;
 }
 
 .list-block {
@@ -199,8 +202,8 @@
 	margin-bottom: 1rem;
 	background: #fff;
 }
-.item-inner{
-	padding-right: .25rem;
+.item-inner a{
+	color: black;
 }
 .pay_input {
 	text-align: right;
