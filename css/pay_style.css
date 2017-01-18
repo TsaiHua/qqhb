@@ -21,7 +21,7 @@
 .btn_size{
 	line-height: 1.6rem!important;
 	height: 1.6rem;
-	font-size: .8rem;
+	font-size: .7rem;
 }
 /*祝福页*/
 .zhufu_total_p{
@@ -51,9 +51,10 @@
 }
 /*提现页*/
 .pay_dashang{
-  display: inline-block;
+  /*display: inline-block;*/
   margin: auto;
 	width: 80%;
+	height: 1.6rem;
 }
 .button_dashang{
 	border-color: #d28988;
@@ -229,9 +230,9 @@
     margin: 0 auto;
     width: 86%;
 }
-.buttonbox{
+/*.buttonbox{
 	margin: auto 2rem;
-}
+}*/
 
 /*手气页CSS*/
 .pay_shouqi{
