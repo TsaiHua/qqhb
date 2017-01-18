@@ -455,6 +455,7 @@
 .button-ann button{
 	display: inline-block;
 	border: 0;
+	font-size: 0.8rem;
 	width: 70%;
 	height: 30%;
 	color: #999;
