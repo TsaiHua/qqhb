@@ -117,7 +117,7 @@
 	width: 84%;
 }
 .pay_ap .pay_input_qita{
-  padding: .8rem;
+  padding: .2rem;
 	text-align: center;
 	height: 51px;
 	background: none;
@@ -145,18 +145,23 @@
 	color: #fff;
 	float: left;
 }
-
-.pay_help_indent{
-	margin: 1rem 1rem;
+.pay_help_text{
+	width: 100%;
+	margin: auto;
+	background-color: white;
 }
 .pay_help_text p{
 	color:#696969;
 	margin-left: 1rem;
 	margin-right: 1rem;
-	line-height: 2rem;
-	text-indent: 2em;
+	line-height: 1.5rem;
+	/*text-indent: 2em;*/
 }
-
+.pay_help_indent{
+	margin: 0rem 1rem;
+	padding-top: 1rem;
+	border-bottom: solid .05rem gray;
+}
 .list-block {
 	margin:0;/*帮助页*/
 }
@@ -189,7 +194,15 @@
 	font-size: .6rem;
 	text-align: center;
 }
-
+.pay_tixianjine{
+	text-align: center;
+	/*border: solid;*/
+	margin: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+	border-width: 40%;
+	color: #d0c907;
+}
 .pay_number{
 	margin: 0 auto;
 	width: 85%;
