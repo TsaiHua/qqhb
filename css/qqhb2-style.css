@@ -85,6 +85,7 @@
 /*	background-image: url(../img/ui_toutix.png);
 	background-repeat:no-repeat;
 	background-size: 2.6rem  1.4rem;*/
+    border: 1px solid #ffcc66;
     background-color: #c44d4b;
 	position: absolute;
 	right:0rem;
@@ -95,6 +96,7 @@
     line-height: 1.6rem;
     color: #f5f5f5;
     border-radius: 0.2rem;
+    font-size: 0.9rem;
 }
 
 .qqhb-top-centert .qqhb-ifon{
