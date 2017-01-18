@@ -85,12 +85,17 @@
           <a href="#" class="btn_size button button-fill button-danger">推荐给好友</a>
         </div>
         <div class="pay_checkbox">
-          <input type="checkbox" value=""/>  同意遵守《圈圈红包用户协议》
+          <input type="checkbox" value=""/>同意遵守<a class="cli-show" href="#">《圈圈红包用户协议》</a>
         </div>
-        <div class="pay_claim">
-           <p>1．红包超过24小时未领取，余额将自动退回到原账号。</p>
-           <p>2．用户发送每个红包我们将收取5%技术服务费。</p>
-        </div>
+<div class="pay_claim  yonghuxuzhi-o">
+        <!-- x -->
+          &nbsp; &nbsp; &nbsp; &nbsp;圈圈红包主要为用户提供面向朋友圈红包发放、收送祝福以及朋友关系互动的娱乐软件，为使用软件（以下统称“圈圈”）及服务，您请您务必审慎阅读、充分理解各条款内容，确定即表示认可并接受本协议下的所有条款；
+<p>1. 用户在使用圈圈发放随机红包时将收取5%的技术服务费，定额红包2元/笔</p>
+<p>2.  用户在发送的红包未领取时，我们将24小时内自动退回到原微信支付账号；</p>
+<p>3.  对于提现我们将通过企业付款或现金红包形式支付到用户的微信零钱中；</p>
+<p>4.  用户不得恶意使用圈圈功能实现大于10000元/笔的恶意套现等行为；</p>
+<p>5.  保护用户个人信息是圈圈的一项基本原则，将会采取合理的措施保护用户的个人微信信息。除法律法规规定的情形外，未经用户许可圈圈不会向第三方公开、透露用户个人微信信息</p>
+</div>
 
   <div class="pop6">
     <div class="popMain6">
@@ -110,47 +115,16 @@
 </div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
    <!--弹出层时背景层DIV-->
-   <div id="fade" class="black_overlay" onclick="CloseDiv('MyDiv','fade')" style="opacity: 0.9;">
+  
+<script type="text/javascript">
+ $(document).ready(function(){
+    $(".cli-show").on('click',function() {
+      $(".yonghuxuzhi-o").slideToggle(1000);
+    })
+  })
 
-   <div id="MyDiv" class="white_content2 white_contenttop2">
-     <p class="color-yello">恭喜您充值成功！</p>
-     <p class="color-yello">您的圈圈红包分享链接为：</p>
-     <p class="color-white text-conter">www.baidu.com</p>
-     <p class="text-conter"><img src="img/erweima.png" width="80"></p>
-     <div class="qqhb-con-btn" style="width:100%">
-       <a href="pay2.html" class="jinyong">点击右上角即可分享到朋友圈</a>http://192.168.1.111:8010/quanHtml/
-     </div>
-   </div>
-  </div>
- <script type="text/javascript">
-   //弹出隐藏层
-   function ShowDiv(show_div,bg_div){
-   document.getElementById(show_div).style.display='block';
-   document.getElementById(bg_div).style.display='block' ;
-   var bgdiv = document.getElementById(bg_div);
-   bgdiv.style.width = document.body.scrollWidth;
-   // bgdiv.style.height = $(document).height();
-   $("#"+bg_div).height($(document).height());
-   };
-   //关闭弹出层
-   function CloseDiv(show_div,bg_div)
-   {
-   document.getElementById(show_div).style.display='none';
-   document.getElementById(bg_div).style.display='none';
-   };
-   </script>
+</script>
 
 
-
-
-<!-- <script type="text/javascript">
-$(document).ready(function(){
-     $(".cal6-dashan").on('click',function(){
-        document.location="share-payment.html";
-       })
- })
-
-
-</script> -->
 </body>
 </html>
