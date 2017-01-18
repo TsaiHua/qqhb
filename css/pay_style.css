@@ -202,8 +202,8 @@
 	margin-bottom: 1rem;
 	background: #fff;
 }
-.item-inner{
-	padding-right: .25rem;
+.item-inner a{
+	color: black;
 }
 .pay_input {
 	text-align: right;
