@@ -61,10 +61,10 @@
 	left: 2.4rem;
 	width: 70%;
 	font-size: 0.6rem;
-	height: 1.4rem;
+	height: 1.6rem;
 	border-radius: 0.3rem;
 	color: #f5f5f5;
-	line-height: 1.4rem;
+	line-height: 1.6rem;
 	overflow: hidden;
 	text-indent: 0.2rem;
 }
@@ -108,7 +108,7 @@ color: #ffcc66;
 
 .qqhb-top-centert .qqhb-ifon .qqhb-ifon-zhufu{
 	margin: 0;
-	height: 100%;
+	height: 120%;
 	text-align: center;
 	font-size: 0.7rem;
 	overflow: hidden;
@@ -116,7 +116,7 @@ color: #ffcc66;
 
 .qqhb-zhufu-ni{
 	margin: 0.5rem 0 ;
-	margin-top: 2rem;
+	margin-top: 2.2rem;
 	color: #ffcc66;
 	font-size: 0.7rem;
 	margin-left: 0.2rem;
