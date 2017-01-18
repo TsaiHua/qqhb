@@ -29,6 +29,10 @@
 	color: white;
 	text-align: center;
 }
+.btn_nonehongbao{
+	width: 50%;
+	margin: 2rem auto!important;
+}
 .clear{
 	clear: both;
 }
