@@ -19,7 +19,7 @@
 	position: absolute;
 	top: 10%;
 	left: 4%;
-	width: 1rem;
+	width: 3rem;
 }
 .pay_checkbox{
 	font-size: .7rem;
@@ -63,7 +63,6 @@
 /*提现页*/
 .pay_dashang{
   margin: auto 1rem;
-	width: 90%;
 	height: 1.6rem;
 }
 .button_dashang{
@@ -80,6 +79,9 @@
 .pay_dashang .dashang_active{
 	background-color: #621918;
 	color: white;
+}
+.btn_shrink{
+	width: 3rem;
 }
 /* 支付页CSS样式 */
 .pay_button{
@@ -252,10 +254,6 @@
     margin: 0 auto;
     width: 86%;
 }
-/*.buttonbox{
-	margin: auto 2rem;
-}*/
-
 /*手气页CSS*/
 .pay_shouqi{
 	top: 8rem;
