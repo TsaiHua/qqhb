@@ -17,9 +17,9 @@
 .pay_back{
 	float: left;
 	position: absolute;
-	top: 10%;
+	top: 14%;
 	left: 4%;
-	width: 3rem;
+	width: 2.5rem;
 }
 .pay_checkbox{
 	font-size: .7rem;
@@ -45,6 +45,9 @@
 }
 .pay_choose .pay_choose1 .pay_active{
 	background-color: #dc8100;
+	background-image: url('../img/gou.png');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
 }
 .font-7{
 	font-size: 0.7rem;
@@ -81,7 +84,7 @@
 	color: white;
 }
 .btn_shrink{
-	width: 3rem;
+	/*width: 3.5rem;*/
 }
 /* 支付页CSS样式 */
 .pay_button{
@@ -228,7 +231,7 @@
 }
 .pay_input {
 	text-align: right;
-	width: 80% !important;
+	width: 90% !important;
 	padding-right: 0.5rem;
 }
 .pay_span{
@@ -245,8 +248,11 @@
 .list-block textarea{
 	height: 3rem 1rem;
 }
+.pay_input_geshu{
+	width: 25%!important;
+}
 .button-danger{
-	margin: .5rem;
+	margin: 1.5rem;
 }
 .pay_claim{
 	height: 5rem;
