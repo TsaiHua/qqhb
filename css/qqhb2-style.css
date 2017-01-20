@@ -7,7 +7,7 @@
 	height: 100%;
 }
 .bjse{
-    background-image: url(../img/bg_xxhdpi.png);
+   background-color:#9b141a;
 
 }
 .qqhb-nav-bj{
@@ -258,7 +258,7 @@ color: #ffcc66;
 
 .fa-red-bj {
     background-image: url(../img/ui_dashang1.png);
-    background-size: 70% 90%;
+    background-size: 70% 95%;
     background-repeat: no-repeat;
     width:100%;
     height: 100%;
@@ -440,3 +440,17 @@ color: #ffcc66;
 }
 
 .shangse{color: #333;}
+
+
+ .jinji{
+      display: inline-block;
+      background-image: url(../img/jjbc.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 3.1rem;
+      right:0.3rem;
+      width: 21%;
+      height: 19%;
+      background-size: 100% auto;
+    }
+  
