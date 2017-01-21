@@ -1,456 +1,174 @@
-.content{
-    background-size:100%  750px;
-	/*background-image: url(../img/bg_xxhdpi.jpg);*/
-	background-repeat:no-repeat;
-	
-	width: 100%;
-	height: 100%;
+/*发红包*/
+.pay_bg{
+	background:#ffffff;
 }
-.bjse{
-   background-color:#9b141a;
-
+.box_head{
+	line-height: 0rem;
 }
-.qqhb-nav-bj{
-	background:rgba(0,0,0,0.3);
-	border: 0;
-	z-index: 1;
-	height: 1.8rem;
-}
-
-.qqhb-nav-bj .title{
-	color:#F5F5F5;
-	height:1.8rem;
-	line-height:1.8rem;
-	font-size: 0.8rem;
-}
-
-.qqhb-top-centert{
-	width: 100%;
-	height: 4.6rem;
-}
-
-.qqhb-top-centert .qqhb-denglong-left{
-	/*background-image: url(../img/head.png);*/
-	background-repeat:no-repeat;
-	background-size: 2.8rem 5.4rem;
+.pay_help_icon{
+	width: 6%;
 	position: absolute;
-	left: 0rem;
-	top: 0.1rem;
-	width:  2.8rem;
-	height:  5.6rem;
+	top: .8rem;
+	right: 1rem;
 }
-
-
-.qqhb-img-tubaio{
-    border-radius: 50%;
-	width: 2.2rem;
-	height:2.2rem;
-	position: absolute;
-	top: 0.8rem;
-	left: 0.2rem;
-	z-index: 100;
-}
-
-
-.qqhb-top-centert .qqhb-zhufu{
-	margin: 0;
-	display: inline-block;
-	background:rgba(0,0,0,0.3);
-	position: absolute;
-	top: 1.2rem;
-	left: 2.4rem;
-	width: 70%;
-	font-size: 0.6rem;
-	height: 1.6rem;
-	border-radius: 0.3rem;
-	color: #f5f5f5;
-	line-height: 1.6rem;
-	overflow: hidden;
-	text-indent: 0.2rem;
-}
-
-
-.qqnh-hongbao{
-	color: #ffcc66;
-	display: inline-block;
-	float: right;
-	margin-right: 0.8rem;	
-}
-
-.qqhb-zhufu a:hover{
-	color: #ffcc66;
-}
-
-.qqhb-top-centert .qqhb-denglong-right{
-/*	background-image: url(../img/ui_toutix.png);
-	background-repeat:no-repeat;
-	background-size: 2.6rem  1.4rem;*/
-    border: 1px solid #ffcc66;
-    background-color: #c44d4b;
-	position: absolute;
-	right:0rem;
-	top: 1.2rem;
-	width: 2.8rem;
-	height: 1.6rem;
-    text-align: center;
-    line-height: 1.6rem;
-    color: #f5f5f5;
-    border-radius: 0.2rem;
-    font-size: 0.9rem;
-}
-
-.qqhb-top-centert .qqhb-ifon{
-	width: 65%;
-	height: 3.3rem;
-	position: absolute;
-	top: 3.3rem;
-	left: 3rem;
-	font-size: 0.7rem;
-	color: #f5f5f5;
-
-}
- .qqhb-jinse{
-color: #ffcc66;
-}
-
-.qqhb-top-centert .qqhb-ifon .qqhb-ifon-zhufu{
-	margin: 0;
-	height: 120%;
-	text-align: center;
-	font-size: 0.7rem;
-	overflow: hidden;
-}
-
-.qqhb-zhufu-ni{
-	margin: 0.5rem 0 ;
-	margin-top: 2.2rem;
-	color: #ffcc66;
-	font-size: 0.7rem;
-	margin-left: 0.2rem;
-}
-
-
-.qqhb-fa-hongbao-r{
-	width: 100%;
-	height: 16rem;
-    overflow: hidden;
-}
-
-.qqhb-haobao-yi{
-	width: 100%;
-	height: 8rem;
-	padding: 0 0.5rem;
-}
-
-.qqhb-haobao-yi .qqhb-1-img{
-	background-image:url(../img/ui_hongbao.png);
-	background-repeat: no-repeat;
-	display: inline-block;	
-	background-size: 100% auto;
-	width: 27.5%;
-	height:100%;
-	margin-left:2.2%;
-	margin-right:2.2%;
+.pay_text1{
+	color: #999;
+	font-size: .6rem;
 	text-align: center;
 }
-
-.qqhb-haobao-yi .qqhb-1-img a{
-	display: inline-block;
-	margin:0 auto;
-	height: 80%;
-    width: 76%;
-	padding-top: 2rem;
-	text-align: center;
-	font-size: 0.8rem;
-	color: #ffcc66;
-}
-
-
-
-@media screen and (min-width:630px ) {
-  .qqhb-fa-hongbao-r{
-              height: 24rem;
-            }
-            .qqhb-haobao-yi{
-            height: 12rem;
-            
-     }
-     .qqhb-haobao-yi .qqhb-1-img a{
-        padding-top: 3rem;
-         width: 60%;
-     }
-
-  }
-
-
-.qqhb-con-btn{
-	width: 65%;
-	height: 6rem;
+.pay_choose{
 	margin: 0 auto;
+	width: 84%;
 }
-
-.qqhb-con-btn .qqhb-wofa-one{
-	display: block;
+.imgbox{
+	width: 21.3%;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-top: -22.8%;
+  margin-left: 39.4%;
+	position: absolute;
+}
+.pay_ap{
+	width: 30%;
+	border-radius: 4%;
 	text-align: center;
-	background-color: #c44d4b;
-	border-radius: 0.2rem;
-	font-size: 0.8rem;
-	height: 1.6rem;
-	line-height: 1.6rem;
-	color: #f5f5f5;
+	background-color: #ec4f3d;
+	margin: .2rem .2rem;
+	float: left;
 }
-
-.qqhb-con-btn .qqhb-fenx-two{
-    position: relative;
-	display: block;
+.pay_span1{
+	color: #fde367;
+  font-size: 1rem;
+}
+.pay_span2{
+	color: #fff;
+	font-size: .6rem;
+}
+.pay_choose .pay_active{
+	/*border: .1rem solid #fde367;*/
+}
+.clear{
+	clear: both;
+}
+.pay_number{
+	margin: .5rem auto;
+	width: 82%;
+}
+.pay_align{
+	padding-right: 0!important;
+}
+.pay_input_geshu{
+	width: 25%!important;
+}
+.pay_span{
+	margin-top:.5rem;
+}
+.btn_size{
+	line-height: 1.6rem!important;
+	height: 1.6rem;
+	width: 65%;
+	margin: .5rem auto;
+	font-size: .7rem;
+	color: #fff;
+	background-color: #ec4f3d;
+	border: .03rem solid #fde367;
+	visibility: 40%;
+}
+.pay_checkbox{
+	font-size: .7rem;
 	text-align: center;
-	background-color: #c44d4b;
-	border-radius: 0.2rem;
-	margin-top:1.2rem;
-	font-size: 0.8rem;
-	height: 1.6rem;
-	line-height: 1.6rem;
-	color: #f5f5f5;
-    z-index: 1000;
+}
+.help{
+	padding-left: 0rem!important;
+	color: #fff;
+}
+.pay_help_text{
+	width: 100%;
+	margin: auto;
+	background-color: white;
+}
+.pay_help_text p{
+	color:#696969;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	line-height: 1.5rem;
+	/*text-indent: 2em;*/
+}
+.pay_help_indent{
+	margin: 0rem 1rem;
+	padding-top: 1rem;
+	border-bottom: solid .05rem gray;
+}
+.pay_tixianjine{
+	text-align: center;
+	margin: 1rem auto;
+	font-size: 2rem;
+	color: #000;
+}
+.pay_tixianjine span{
+	font-size: .8rem;
+}
+.pay_text1 span{
+	color: #ec4f3d;
+	font-size: 1rem;
+}
+.icon2{
+	background: url(../img/userimg.png);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+.col-30{
+	width: 30%;
 }
 
-
-
-.qqhb-fenx-two2{
-    position: relative;
-    display: block;
-    text-align: center;
-    background-color: #c44d4b;
-    border-radius: 0.2rem;
-    /*margin-top:1.2rem;*/
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    color: #f5f5f5;
-    z-index: 1000;
-
-
+.pay_time{
+	color: #999;
+	font-size: .7rem;
 }
-
-
-
- .jinyong{
-    display: block;
-    text-align: center;
-
-    border-radius: 0.2rem;
-    margin-top:1.2rem;
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    color: #f5f5f5;
-    background-color: #e6e6e6;
-    border-color: #357ebd;
-    color: #000;
+.pay_zhufu{
+	color: #ffb22e;
+	font-size: .7rem;
 }
-/*抢完打赏页*/
-
-.dianwu{
-    position: relative; 
-    margin-bottom: 3%;
-    padding-top: 6%;   
+.pay_shouqi{
+	text-align: right;
 }
-
-.fa-red-bj {
-    background-image: url(../img/ui_dashang1.png);
-    background-size: 70% 95%;
-    background-repeat: no-repeat;
-    width:100%;
-    height: 100%;
-    padding-top:15%;
-    position:absolute;
-    left: 16%;
-    text-align: center;
-    margin: 0 auto;
-
+.pay_hongbao{
+	font-size: .85rem;
+	color: #ffb22e;
 }
-
-
-.fa-red-bj a img{
-    display: inline-block;
-    width: 54px;
-    height: 54px;
-    position: absolute;
-    left: 53%;
-    top:-4%;
-    z-index: 100;
-
+.col-20{
+	width: 20%;
 }
-
-.fa-ref-jine{
-    position: absolute;
-    top: 0;
-    left: 0;
-     width: 100%;
-     height: 100%;
-     margin: 0 auto;
-     text-align: center;
-   }
-
-    .fa-ref-jine p{ 
-     text-align: center; 
-     margin: 0;
-     margin-top:32%;
-     font-size: 1.2rem;
-      color: #e1b578;
-    }
-
-.fa-zhufu{
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
+.col-80{
+	width: 78%;
 }
-
-.fa-zhufu p{
-    margin: 0;
-    font-size: 0.9rem;
-    color: #f5f5f5;
-    margin-top: 17%;
-} 
-.fa-zhufu a{
-    color: #ffcc66;
-    font-size: 0.8rem;
-    display: inline-block;
-    margin-top: 3%;
+.pay_number ul,.pay_number ul li .item-input input{
+	background: none;
+	font-size: .7rem!important;
 }
-
-.fa-red-pop {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        padding-top:32%;
-        text-align: center;
+.item-inner a{
+	color: black;
 }
-
-.fa-tiao-das ul{
-    margin: 0;
-    padding:0;
-    list-style: none;
-    margin-top: 20%;
+.pay_input {
+	text-align: right;
+	width: 90% !important;
+	padding-right: 0.5rem;
 }
-.fa-tiao-das ul li{
-    display: inline-block;
-    width: 20%;
-    font-size: 0.8rem;
-    height:1.6rem;
-    line-height: 1.6rem;
-    border-radius: 0.2rem;
-    background: rgba(0,0,0,0.4);
+.align-top .pay_text{
+	font-size: .7rem;
+	color:#808080;
+	text-align: left;
+	padding-left: 0;
+	height: 3rem;
 }
-.fa-tiao-das ul li a{
-      color: #fff;
+.pay_claim{
+	height: 5rem;
+	font-size: 0.6rem;
+  margin: 0 auto;
+  width: 86%;
 }
-.fa-tiao-das ul .one-active {
-    background-color: #ff9900;
+.shouqian-item{
+	display: block !important;
 }
-
-.fa-tiao-das p{
-    margin: 0;
-    padding:0;
-    font-size: 1.5rem;
-    margin-top: 31%;
-}
-
-.fa-red-pop button{
-    margin-top: 0;
-   border: 0;
-   width: 30%;
-   border-radius:0.3rem;
-   height: 1.6rem;
-   background-color: #FF2D2D;
-   color: #ffcc66;
-}
-.chadiao a img{
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    left: 56%;
-    top:-4%;
-    z-index: 100;
-
-}
-
-
-/*遮罩层样式*/
-.color-white{
-  color: #fff;
-}
-.color-yello{
-  color: #FFC200;
-}
-.text-conter{
-  text-align: center;
-}
-.white_contenttop{
-  top: 40%;
-  text-align: center;
-}
-.white_contenttop2{
-  top:20%;
-}
-.size-6{
-  font-size:.6rem;
-}
-.black_overlay{
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index:1001;
-    -moz-opacity: 0.8;
-    opacity:.80;
-    filter: alpha(opacity=80);
-}
-.white_content,.white_content2 {
-    color: #ff2d4e;
-    /*display: none;*/
-    position: absolute;
-    left: 10%;
-    width: 80%;
-    z-index:1002;
-    overflow: auto;
-}
-
-.dachu{
-    font-size: 0.9rem;
-    /*font-weight: bold;*/
-}
-
-.qianwanliao{
-    display:inline-block;
-    width: 100%;
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: #fff;
-    /*height: 2rem;*/
-}
-
-.shangse{color: #333;}
-
-
- .jinji{
-      display: inline-block;
-      background-image: url(../img/jjbc.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 3.1rem;
-      right:0.3rem;
-      width: 21%;
-      height: 19%;
-      background-size: 100% auto;
-    }
-  
+/*ending*/

@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="css/sm.min.css">
-  <link rel="stylesheet" type="text/css" href="css/pay_style.css">
   <link rel="stylesheet" type="text/css" href="css/qqhb2-style.css">
   <title>提现</title>
 </head>
@@ -12,59 +11,15 @@
 <div class="content">
   <div class= "box_head">
     <!-- 头部背景 -->
-    <img class="pull-left" src="img/ui_tixiandingkuang.png" width="100%" height="100%">
-    <!-- 返回图标 -->
-    <div class="pay_back">
-      <a href="#"><img class="pull-left" src="img/pay_back.png" width="100%" height="100%"</a>
-    </div>
-    <!-- 帮助图标 -->
-    <!-- <div class="pay_help_icon">
-      <a href="#"><img class="pull-right" src="img/ui_tixianwenhao.png" width="100%" height="100%"></a>
-    </div> -->
+    <img src="img/ui_tixiandingkuang.png" width="100%">
     <!-- 用户头像 -->
     <div class="imgbox">
-    <img class="" src="img/userimg.jpg" width="100%"/>
+    <img src="img/userimg.jpg" width="100%"/>
     </div>
   </div>
-  <p class='pay_text1'>我的圈圈红包余额为8888元</p>
-    <div class="pay_tixianjine">8888.00元</div>
-      <div class="pay_dashang">
-        <a href="#" class="btn_shrink btn_size pull-left button button_dashang">忍心拒绝</a>
-        <a href="#" class="btn_shrink btn_size pull-left button button_dashang dashang_active ">打赏1.8</a>
-        <a href="#" class="btn_shrink btn_size pull-left button button_dashang">打赏2.8</a>
-        <a href="#" class="btn_shrink btn_size pull-left button button_dashang">打赏3.8</a>
-      </div>
-    <div class="buttonbox">
-      <a href="#" onclick="ShowDiv('MyDiv','fade')" class="btn_size button button-fill button-danger cal6-dashan">确认提现到微信零钱</a>
-    </div>
+  <p class='pay_text1'>我的圈圈红包余额为:</p>
+  <div class="pay_tixianjine">8888.88<span>元</span></div>
+  <a href="#" onclick="ShowDiv('MyDiv','fade')" class="btn_size button">确认提现到微信零钱</a>
 </div>
-<!--   <input id="Button1" type="button" value="点击弹出层" onclick="ShowDiv('MyDiv','fade')" /> -->
-
-   <!--弹出层时背景层DIV-->
-   <div id="fade" class="black_overlay" onclick="CloseDiv('MyDiv','fade')">
-
-   <div id="MyDiv" class="white_content2 white_contenttop2">
-       <p class="text-conter"><img src="img/ui_tixcz.png" width="200"></p>
-       <p class="color-white text-conter size-6">系统将会在2小时内派发到您的微信零钱，请及时查看！</p>
-     </div>
-  </div>
-
-<script type="text/javascript">
-   //弹出隐藏层
-   function ShowDiv(show_div,bg_div){
-   document.getElementById(show_div).style.display='block';
-   document.getElementById(bg_div).style.display='block' ;
-   var bgdiv = document.getElementById(bg_div);
-   bgdiv.style.width = document.body.scrollWidth;
-   // bgdiv.style.height = $(document).height();
-   $("#"+bg_div).height($(document).height());
-   };
-   //关闭弹出层
-   function CloseDiv(show_div,bg_div)
-   {
-   document.getElementById(show_div).style.display='none';
-   document.getElementById(bg_div).style.display='none';
-   };
-   </script>
 </body>
 </html>
