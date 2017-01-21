@@ -1,3 +1,530 @@
+
+/*公共的样式*/
+
+
+/*去掉p标签默认样式*/
+ul li{
+  list-style: none;
+}
+.p-mar-padd{margin:0;padding: 0;}
+
+/*按钮*/
+.btn-se{
+  width: 80%;
+  height: 1.7rem;
+  border-radius: 0.3rem;
+  line-height: 1.7rem;
+  background-color: #ff2a48;
+  color:#fff;
+  margin-top: 0.6rem;
+
+}
+
+
+/*首页*/
+.shouye-bj{
+    background-size:100% 106%;
+	  background-image: url(../img/bg.jpg);
+	  background-repeat:no-repeat; 
+	  width: 100%;
+	  height: 100%;
+}
+
+.content .nav-top-con{
+  width:100%;
+  height: 16%;
+  margin-top: 37%;
+}
+
+
+/*用户图像 余额  发过的红包 */
+
+
+ .nav-top-con  .yiyihang{
+  width: 100%;
+  height: 54%;
+  padding-left: 0.3rem;
+}
+
+ .yiyihang a img{
+  float: left;
+  display: inline-block;
+  margin-top: 0.1rem;
+  width: 2.4rem;
+  height: 2.3rem;
+  border-radius: 50%;
+ }
+
+.yiyihang p{
+  float: left;
+  background-color: #ff2a48;
+  height: 1.6rem;
+  width: 68%;
+  margin-left: 0.2rem;
+  margin-top: 0.6rem;
+  border-radius: 0.3rem;
+  line-height: 1.6rem;
+  text-indent: 0.2rem;
+  position: relative;
+}
+
+.yiyihang p .mz-yue-con{
+  display: inline-block;
+  width:70%;
+  height: 1.6rem;
+  overflow:scroll;
+  color: #fff;
+  font-size: 0.65rem;
+  overflow: hidden;
+  
+
+}
+.yiyihang p a{
+  display: inline-block;
+  position: absolute;
+  right: 0.2rem;
+  color: #ffcc33;
+  font-size: 0.65rem;
+
+}
+
+.yiyihang .shouye-tixin{
+  width: 14%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #ff2a48;
+  float: left;
+  margin-top: 0.7rem;
+  margin-left: 0.2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+.shouye-tixin a{
+  color: #fff;
+}
+
+
+/*名称 金额 祝福语*/
+
+.zhufuyu-con{
+  position: relative;
+  height: 46%;
+  width: 70%;
+  margin:0 auto;
+
+}
+
+.zhufuyu-con .p1-mc-je{
+  position: absolute;
+  top:0%;
+  text-align: center;
+  overflow:scroll;
+  height: 50%;
+  width: 100%;
+  color:#e9b603;
+  font-size:0.65rem;
+}
+.zhufuyu-con .p1-mc-je .jiada-se{
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #ee3b37;
+}
+
+.zhufuyu-con .p2-zhufuyu{
+  position: absolute;top:50%;
+  width: 100%;
+  height: 50%;
+  font-size: 0.65rem;
+  text-align: center;
+  overflow: scroll;
+  text-indent: 0.2rem;
+  margin-top:0.1rem ;
+  color: #ee3b37;
+
+}
+
+/*领红包，送祝福  红包*/
+
+.conter-hongbao{
+  width: 100%;
+  height: 40%;
+  margin-top: 0.3rem;
+}
+
+
+@media screen and (max-width:340px ) {
+  .conter-hongbao p {
+             margin-top: 0.4rem;
+            }
+    
+  }
+
+.conter-hongbao .lhb-szf{
+  font-size: 0.7rem;
+  width: 60%;
+  height:8%;
+  margin-bottom: 0.2rem;
+  margin-left: 6%;
+  color: #ee3b37;
+
+
+}
+.conter-hongbao .comm-hb{
+  width:100%;
+  height: 12rem;
+
+}
+
+.comm-hb  .qqhb-1-img{
+  padding: 0 5%;
+  background-image: url(../img/ui_hongbao.png);
+  background-repeat: no-repeat;
+  display: inline-block;  
+  width: 30%;
+  height:50%;
+  text-align: center;
+  background-size:90% 90%;
+  text-align: center;
+  margin-left: 2.2%;
+ }
+
+.comm-hb  .qqhb-1-img a{
+  display: inline-block;
+  width: 100%;
+  color: #fde367;
+  height: 100%;
+  padding-top: 40%;
+  font-size: 0.7rem;
+
+}
+
+
+
+@media screen and (min-width:321px ) {
+  .comm-hb  .qqhb-1-img a{
+              width: 80%;
+            }
+         
+     }
+
+  
+/*按钮 我也要发圈圈红包  查看祝福*/
+
+.btn-con{
+  width: 100%;
+  height: 14%;
+  text-align: center;
+  margin-top:1rem;
+}
+
+.btn-con a{
+  display:inline-block;
+  border: 1px solid #fde367;
+}
+
+
+@media screen and (max-width:321px ) {
+  .btn-con {
+             margin-top: 1.6rem;
+            }
+    
+  }
+
+
+   /*未抢到红包弹窗*/
+ 
+.wei-hongbao-tc{
+  display:none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background:rgba(0,0,0,0.8);
+
+}
+.wei-hongbao-tc .con-no{
+  width: 100%;
+  height: 46%;
+  margin-top: 30%;
+}
+.con-no .weip-bj{
+  background-image: url(../img/ui_dashang1.png);
+  background-repeat: no-repeat;
+  background-size:90% 100%;
+  position: relative;
+  left: 15%;
+  width: 78%;
+  height: 100%;
+}
+.con-no .weip-bj span{
+      font-size: 1.8rem;
+      position: absolute;
+      top: 30%;
+      left: 39%;color: #999;
+}
+
+.con-no .weip-bj p{
+  width: 100%;
+  font-size:0.85rem; 
+  position: relative;
+  top: 72%; 
+  left: 5%;
+  color: #fff;
+ }
+
+@media screen and (min-width:340px ) {
+  .con-no .weip-bj p {
+             left: 12%;
+            }
+    
+  }
+
+
+ .wei-hongbao-tc  .yc-qued{
+   display: inline-block;
+   width: 40%;
+   height: 1.7rem;
+   background-color: #ff2048;
+   text-align: center;
+   line-height: 1.7rem;
+   position: relative;
+   left: 30%;
+   margin-top: 5%;
+   border-radius: 0.2rem;
+   font-size: 0.8rem;
+   color: #fff;
+ }
+
+
+
+   /*抢到红包弹窗*/
+.qianghongdao{
+  display:none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background:rgba(0,0,0,0.8);
+
+}
+
+.qianghongdao .qiang-hb{
+  width: 100%;
+  height: 46%;
+  margin-top: 30%;
+}
+.qiang-hb .weip-bj{
+  background-image: url(../img/ui_dashang1.png);
+  background-repeat: no-repeat;
+  background-size:90% 100%;
+  position: relative;
+  left: 15%;
+  width: 78%;
+  height: 100%;
+}
+
+
+.qiang-hb .weip-bj p{
+  font-size: 0.7rem;
+    position: relative;
+    top: 50%; 
+    left: 5%;
+    color: #fff;
+
+}
+
+.qiang-hb .weip-bj .je-ds{
+  width: 25%;
+  height: 10%;
+  font-size: 0.9rem;
+  position: relative;
+  top: 35%;
+  left: 33%;
+  text-align: center;
+
+}
+
+
+@media screen and (min-width:340px ) {
+ .qiang-hb .weip-bj p {
+             left: 12%;
+     }  
+  }
+
+
+.qiang-hb .weip-bj ul{
+  padding: 0;
+  width: 100%;
+  height: 12%;
+  position: relative;
+  top: 50%;
+  color: #fff;
+}
+
+.weip-bj ul li{
+   display: inline-block;
+   width: 25%;
+   height: 98%;
+   text-align: center;
+   background-color: #e0c59f;
+   border-radius: 0.3rem;
+   line-height: 220%;
+   font-size: 0.7rem;
+   margin-left: 2.5%;
+}
+
+.weip-bj ul .das-active{
+  border: 2px solid #fed40d;
+}
+
+
+.qianghongdao  .qiangd-qx{
+   display: inline-block;
+   width: 40%;
+   height: 1.7rem;
+   background-color: #ff2048;
+   text-align: center;
+   line-height: 1.7rem;
+   position: relative;
+   left: 30%;
+   margin-top: 5%;
+   border-radius: 0.2rem;
+   font-size: 0.8rem;
+   color: #fff;
+ }
+
+/*分享页*/
+
+.header-bj{
+  background-image: url(../img/bj-fx.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:23%;
+}
+.header-bj img{
+  display: inline-block;
+  position: relative;
+  left: 39.3%;
+  top:37.5%;
+  border-radius: 50%;
+  background-size: 50% auto;
+  width: 22%;
+}
+
+@media screen and (min-width:560px ) {
+  .header-bj img{
+             top: 26.5%
+            }
+  }
+
+.hbzbh-con{
+  width: 100%;
+  height: 26%;
+
+
+}
+
+.hbzbh-con p{
+  font-size: 1.5rem;
+  width: 60%;
+  height:26%;
+  margin: 0 auto;
+}
+
+.hbzbh-con p span{
+  display: inline-block;
+  background-image: url(../img/bag_1.png);
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  width: 14%;
+  height: 60%;
+  position: relative;
+  top: 13%;
+  left: 3%;
+}
+
+
+.hbzbh-con a{
+  display: inline-block;
+  width: 80%;
+  height: 1.7rem;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+  text-align: center;
+  background-color: #ff2048;
+  margin-left: 10%;
+  margin-top: 16%;
+  border-radius: 0.3rem;
+}
+
+
+.erweima-con{
+  width: 50%;
+  margin: 0 auto;
+  height: 22%;
+  background-color: #000;
+}
+
+
+.erweima-con img{
+  width: 100%;
+  height: 100%;
+}
+
+.fa-erweima{
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1%;
+  color: #000;
+
+}
+
+.fx-jies{
+  width: 90%;
+  height:16%;
+  margin: 0 auto;
+  margin-top: 1.6%;
+}
+.fx-jies p{
+  padding: 0;
+  margin: 0;
+  font-size: 0.7rem;
+  color: #999;
+}
+
+
+/*分享弹窗*/
+.fx-pop-tanchu{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background:rgba(0,0,0,0.8);
+      }    
+
+       .fx-pop-tanchu p{
+        color: #f5f5f5;
+        margin-top: 65%;
+        text-align: center;
+       }
+
+    .fx-pop-tanchu img{
+      display: inline-block;
+      width: 20%;
+      height: 26%;
+      background-size:100% auto;
+      position: absolute;
+      right:10%;
+      top: 5%;
+    }
+
+
+
+
+
+
+
 /*发红包*/
 .pay_bg{
 	background:#ffffff;
@@ -19,6 +546,7 @@
 .pay_choose{
 	margin: 0 auto;
 	width: 84%;
+	height: 26%;
 }
 .imgbox{
 	width: 21.3%;
@@ -29,6 +557,7 @@
 	position: absolute;
 }
 .pay_ap{
+
 	width: 30%;
 	border-radius: 4%;
 	text-align: center;
@@ -45,7 +574,7 @@
 	font-size: .6rem;
 }
 .pay_choose .pay_active{
-	/*border: .1rem solid #fde367;*/
+border: 2px solid #fde367;	
 }
 .clear{
 	clear: both;
@@ -172,3 +701,83 @@
 	display: block !important;
 }
 /*ending*/
+
+
+
+
+
+
+
+
+/*遮罩层样式 --提现*/
+.color-white{
+  color: #fff;
+}
+.color-yello{
+  color: #FFC200;
+}
+.text-conter{
+  text-align: center;
+}
+.white_contenttop{
+  top: 40%;
+  text-align: center;
+}
+.white_contenttop2{
+  top:20%;
+}
+.size-6{
+  font-size:.6rem;
+}
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.white_content,.white_content2 {
+    color: #ff2d4e;
+    /*display: none;*/
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    z-index:1002;
+    overflow: auto;
+}
+
+.dachu{
+    font-size: 0.9rem;
+    /*font-weight: bold;*/
+}
+
+.qianwanliao{
+    display:inline-block;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #fff;
+    /*height: 2rem;*/
+}
+
+.shangse{color: #333;}
+
+
+ .jinji{
+      display: inline-block;
+      background-image: url(../img/jjbc.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 3.1rem;
+      right:0.3rem;
+      width: 21%;
+      height: 19%;
+      background-size: 100% auto;
+    }
+
