@@ -21,39 +21,34 @@
       <img src="img/userimg.jpg" width="100%"/>
       </div>
     </div>
-    <p class='pay_text1'>感恩2016，感恩所有的朋友，给大家发一个红包</p>
+    <!-- start -->
+    <p class='pay_text1'>感恩朋友，一路有你，给大家发一个祝福红包</p>
       <div class="pay_choose">
         <div style="height:50%;width:100%;">
           <a class="pay_ap pay_active" href="#">
-            <span class="pay_span1">38元</span><br>
-            <span class="pay_span2 ">恭喜发财</span>
+            <span class="pay_span1"> <span class="pay_span3">¥</span>38</span><br>
           </a>
-          <a class="pay_ap" href="#">
-            <span class="pay_span1">68元</span><br>
-            <span class="pay_span2">恭喜发财</span>
+          <a class="pay_ap " href="#">
+            <span class="pay_span1"> <span class="pay_span3">¥</span>68</span><br>
           </a>
-          <a class="pay_ap" href="#">
-            <span class="pay_span1">198元</span><br>
-            <span class="pay_span2">恭喜发财</span>
+          <a class="pay_ap " href="#">
+            <span class="pay_span1"> <span class="pay_span3">¥</span>198</span><br>
           </a>
         </div>
         <div>
-          <a class="pay_ap" href="#">
-            <span class="pay_span1">666元</span><br>
-            <span class="pay_span2">恭喜发财</span>
+          <a class="pay_ap " href="#">
+            <span class="pay_span1"> <span class="pay_span3">¥</span>666</span><br>
           </a>
           <a class="pay_ap" href="#">
-            <span class="pay_span1">888元</span><br>
-            <span class="pay_span2">恭喜发财</span>
+            <span class="pay_span1"> <span class="pay_span3">¥</span>888</span><br>
           </a>
-          <a class="pay_ap" href="#">
-            <!-- <span class="pay_span1">&nbsp;</span><br>
-            <span class="pay_span2">&nbsp;</span> -->
-            <!-- <input type="text" name="" style="width:80%;height:;display: inline-block;"> -->
-          <!--   <textarea style="width:100%;height:50px;margin:0;padding:0;background-color:#ec4f3d;border:0;  text-indent:30%;line-height:50px;font-size:1rem;" placeholder="其他"></textarea> -->
-          </a>
+          <a class="pay_ap inputValue">
+            <input style="width:100%;height:30.9px;margin:0;padding:0;background-color:#ec4f3d;border:0;  text-indent:30%;line-height:30.9px;font-size:0.7rem;" oninput="checkTextLength(this ,7)" type="text" id="amount" type="tel" placeholder="其他">
+          </a >
         </div>
       </div>
+      <!-- end -->
+      <!-- start -->
       <div class="clear"></div>
       <div class="list-block pay_number">
           <ul>
@@ -66,7 +61,6 @@
                 </div>
               </div>
             </li>
-
             <li class="align-top">
               <div class="item-inner">
                 <div class="item-input">
@@ -77,20 +71,23 @@
           </ul>
         </div>
         <div>
-        <div class="pay_checkbox">
-          <input type="checkbox" value=""/>同意遵守<a class="cli-show" href="#">《圈圈红包用户协议》</a>
-        </div>
+          <div class="pay_checkbox">
+            <input type="checkbox" value=""/>同意遵守<a class="cli-show" href="#">《圈圈红包用户协议》</a>
+          </div>
           <a href="share-payment.html" class="btn_size button" >塞进红包并发到朋友圈</a>
-          <!-- <a href="#" class="btn_size button">推荐给好友</a> -->
         </div>
-  <div class="pay_claim  yonghuxuzhi-o">
-            &nbsp; &nbsp; &nbsp; &nbsp;
-            圈圈红包主要为用户提供面向朋友圈红包发放、收送祝福以及朋友关系互动的娱乐软件，为使用软件（以下统称“圈圈”）及服务，您请您务必审慎阅读、充分理解各条款内容，确定即表示认可并接受本协议下的所有条款；
-  <p>1. 用户在使用圈圈发放随机红包时将收取5%的技术服务费，定额红包2元/笔</p>
-  <p>2.  用户在发送的红包未领取时，我们将24小时内自动退回到原微信支付账号；</p>
-  <p>3.  对于提现我们将通过企业付款或现金红包形式支付到用户的微信零钱中；</p>
-  <p>4.  用户不得恶意使用圈圈功能实现大于10000元/笔的恶意套现等行为；</p>
-  <p>5.  保护用户个人信息是圈圈的一项基本原则，将会采取合理的措施保护用户的个人微信信息。除法律法规规定的情形外，未经用户许可圈圈不会向第三方公开、透露用户个人微信信息</p>
-  </div>
+        <div class="pay_claim">
+          <p>1. 用户在使用圈圈发放随机红包时将收取5%的技术服务费，定额红包2元/笔</p>
+          <p>2.  用户在发送的红包未领取时，我们将24小时内自动退回到原微信支付账号；</p>
+        </div>
+        <div class="pay_claim  yonghuxuzhi-o">
+          &nbsp; &nbsp; &nbsp; &nbsp;圈圈红包主要为用户提供面向朋友圈红包发放、收送祝福以及朋友关系互动的娱乐软件，为使用软件（以下统称“圈圈”）及服务，您请您务必审慎阅读、充分理解各条款内容，确定即表示认可并接受本协议下的所有条款；
+          <p>1. 用户在使用圈圈发放随机红包时将收取5%的技术服务费，定额红包2元/笔</p>
+          <p>2.  用户在发送的红包未领取时，我们将24小时内自动退回到原微信支付账号；</p>
+          <p>3.  对于提现我们将通过企业付款或现金红包形式支付到用户的微信零钱中；</p>
+          <p>4.  用户不得恶意使用圈圈功能实现大于10000元/笔的恶意套现等行为；</p>
+          <p>5.  保护用户个人信息是圈圈的一项基本原则，将会采取合理的措施保护用户的个人微信信息。除法律法规规定的情形外，未经用户许可圈圈不会向第三方公开、透露用户个人微信信息</p>
+        </div>
+        <!-- end -->
 </body>
 </html>
