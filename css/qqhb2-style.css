@@ -17,6 +17,8 @@ ul li{
   background-color: #ff2a48;
   color:#fff;
   margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-size: 0.8rem;
 
 }
 
@@ -49,9 +51,9 @@ ul li{
  .yiyihang a img{
   float: left;
   display: inline-block;
-  margin-top: 0.1rem;
-  width: 2.4rem;
-  height: 2.3rem;
+  /*margin-top: 0.1rem;*/
+  width: 2rem;
+  height: 1.9rem;
   border-radius: 50%;
  }
 
@@ -61,7 +63,7 @@ ul li{
   height: 1.6rem;
   width: 68%;
   margin-left: 0.2rem;
-  margin-top: 0.6rem;
+  margin-top: 0.16rem;
   border-radius: 0.3rem;
   line-height: 1.6rem;
   text-indent: 0.2rem;
@@ -70,7 +72,7 @@ ul li{
 
 .yiyihang p .mz-yue-con{
   display: inline-block;
-  width:70%;
+  width:62%;
   height: 1.6rem;
   overflow:scroll;
   color: #fff;
@@ -94,10 +96,11 @@ ul li{
   line-height: 1.5rem;
   background-color: #ff2a48;
   float: left;
-  margin-top: 0.7rem;
+  margin-top: 0.26rem;
   margin-left: 0.2rem;
   text-align: center;
   border-radius: 0.2rem;
+  font-size: 0.7rem;
 }
 .shouye-tixin a{
   color: #fff;
@@ -116,10 +119,11 @@ ul li{
 
 .zhufuyu-con .p1-mc-je{
   position: absolute;
-  top:0%;
+  top:0;
   text-align: center;
   overflow:scroll;
   height: 50%;
+  line-height: 15px;
   width: 100%;
   color:#e9b603;
   font-size:0.65rem;
@@ -147,7 +151,7 @@ ul li{
 
 .conter-hongbao{
   width: 100%;
-  height: 40%;
+  height: 12rem;
   margin-top: 0.3rem;
 }
 
@@ -200,9 +204,10 @@ ul li{
 
 
 
-@media screen and (min-width:321px ) {
+@media screen and (max-width:321px ) {
   .comm-hb  .qqhb-1-img a{
-              width: 80%;
+              width: 100%;
+               padding-top: 50%;
             }
          
      }
@@ -212,10 +217,17 @@ ul li{
 
 .btn-con{
   width: 100%;
-  height: 14%;
+  height: 6rem;
   text-align: center;
-  margin-top:1rem;
+  margin-top:5%;
 }
+
+
+@media screen and (max-width:340px ) {
+  .btn-con {
+              margin-top:1rem;
+        }
+  }
 
 .btn-con a{
   display:inline-block;
@@ -243,8 +255,8 @@ ul li{
 }
 .wei-hongbao-tc .con-no{
   width: 100%;
-  height: 46%;
-  margin-top: 30%;
+  height: 56%;
+  margin-top: 20%;
 }
 .con-no .weip-bj{
   background-image: url(../img/ui_dashang1.png);
@@ -259,21 +271,23 @@ ul li{
       font-size: 1.8rem;
       position: absolute;
       top: 30%;
-      left: 39%;color: #999;
+      left: 39%;
+      color: #999;
 }
 
 .con-no .weip-bj p{
   width: 100%;
-  font-size:0.85rem; 
+  font-size:0.8rem; 
   position: relative;
   top: 72%; 
-  left: 5%;
+  left: 8%;
   color: #fff;
  }
 
-@media screen and (min-width:340px ) {
+@media screen and (max-width:322px ) {
   .con-no .weip-bj p {
-             left: 12%;
+              left: 7%;
+              font-size: 0.7rem;
             }
     
   }
@@ -308,7 +322,7 @@ ul li{
 
 .qianghongdao .qiang-hb{
   width: 100%;
-  height: 46%;
+  height: 56%;
   margin-top: 30%;
 }
 .qiang-hb .weip-bj{
@@ -322,11 +336,11 @@ ul li{
 }
 
 
-.qiang-hb .weip-bj p{
-  font-size: 0.7rem;
+.qiang-hb .weip-bj .pcla2{
+    font-size: 0.7rem;
     position: relative;
     top: 50%; 
-    left: 5%;
+    left: 8%;
     color: #fff;
 
 }
@@ -343,9 +357,9 @@ ul li{
 }
 
 
-@media screen and (min-width:340px ) {
- .qiang-hb .weip-bj p {
-             left: 12%;
+@media screen and (max-width:322px ) {
+ .qiang-hb .weip-bj .pcla2 {
+             left: 2%;
      }  
   }
 
@@ -366,10 +380,19 @@ ul li{
    text-align: center;
    background-color: #e0c59f;
    border-radius: 0.3rem;
-   line-height: 220%;
+   line-height: 1.9rem;
    font-size: 0.7rem;
    margin-left: 2.5%;
 }
+
+
+@media screen and (max-width:322px ) {
+ .weip-bj ul li {
+               line-height: 1.4rem;
+                  height: 78%;
+     }  
+  }
+
 
 .weip-bj ul .das-active{
   border: 2px solid #fed40d;
@@ -397,17 +420,19 @@ ul li{
   background-image: url(../img/bj-fx.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
   width: 100%;
-  height:23%;
+  height:27%;
 }
 .header-bj img{
   display: inline-block;
-  position: relative;
-  left: 39.3%;
-  top:37.5%;
+  position: absolute;
   border-radius: 50%;
-  background-size: 50% auto;
-  width: 22%;
+  background-size: 100% auto;
+  width:21.3%;
+  overflow: hidden;
+  margin-top: 15.8%;
+  margin-left: 39.4%;
 }
 
 @media screen and (min-width:560px ) {
@@ -417,6 +442,7 @@ ul li{
   }
 
 .hbzbh-con{
+  margin-top:5%;
   width: 100%;
   height: 26%;
 
@@ -424,9 +450,9 @@ ul li{
 }
 
 .hbzbh-con p{
-  font-size: 1.5rem;
-  width: 60%;
-  height:26%;
+  font-size: 1rem;
+  height:18%;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -434,11 +460,11 @@ ul li{
   display: inline-block;
   background-image: url(../img/bag_1.png);
   background-repeat: no-repeat;
-  background-size: 70% auto;
-  width: 14%;
-  height: 60%;
+  background-size: 80% auto;
+  width: 1.2rem;
+  height: 1.4rem;
   position: relative;
-  top: 13%;
+  top: 30%;
   left: 3%;
 }
 
@@ -453,15 +479,15 @@ ul li{
   text-align: center;
   background-color: #ff2048;
   margin-left: 10%;
-  margin-top: 16%;
+  margin-top: 12%;
   border-radius: 0.3rem;
 }
 
 
 .erweima-con{
-  width: 50%;
+  width: 7.5rem;
   margin: 0 auto;
-  height: 22%;
+  height: 6.5rem;
   background-color: #000;
 }
 
@@ -477,12 +503,12 @@ ul li{
   margin: 0 auto;
   margin-top: 1%;
   color: #000;
-
+  font-size: 0.7rem;
 }
 
 .fx-jies{
   width: 90%;
-  height:16%;
+  height:25%;
   margin: 0 auto;
   margin-top: 1.6%;
 }
@@ -700,6 +726,12 @@ border: 2px solid #fde367;
 .shouqian-item{
 	display: block !important;
 }
+
+
+.shangse-a{
+  color: #3d4145;
+}
+
 /*ending*/
 
 
