@@ -150,7 +150,7 @@ ul li{
 
 .conter-hongbao{
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   margin-top: 0.3rem;
 }
 
@@ -174,9 +174,19 @@ ul li{
 }
 .conter-hongbao .comm-hb{
   width:100%;
-  height: 12rem;
+  height: 14rem;
 
 }
+
+@media screen and (max-width:321px ) {
+   .conter-hongbao{
+              height: 12rem;
+            }
+  .conter-hongbao .comm-hb{
+              height: 12rem;
+            }
+         
+     }
 
 .comm-hb  .qqhb-1-img{
   padding: 0 5%;
@@ -186,27 +196,35 @@ ul li{
   width: 30%;
   height:50%;
   text-align: center;
-  background-size:90% 90%;
+  background-size:90% auto;
   text-align: center;
   margin-left: 2.2%;
  }
 
 .comm-hb  .qqhb-1-img a{
   display: inline-block;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
   color: #fde367;
   height: 100%;
-  padding-top: 40%;
+  padding-top: 60%;
   font-size: 0.7rem;
 
 }
 
+@media screen and (max-width:359px ) {
+  .comm-hb  .qqhb-1-img a{
+              width: 90%;
+               padding-top: 55%;
+            }
+         
+     }
 
 
 @media screen and (max-width:321px ) {
   .comm-hb  .qqhb-1-img a{
               width: 100%;
-               padding-top: 50%;
+               padding-top: 55%;
             }
          
      }
@@ -218,12 +236,13 @@ ul li{
   width: 100%;
   height: 6rem;
   text-align: center;
-  margin-top:5%;
+  margin-top:2rem;
+  /*padding-top: 1rem;*/
 }
 
 
 @media screen and (max-width:340px ) {
-  .btn-con {
+  .btn-con{
               margin-top:1rem;
         }
   }
@@ -254,24 +273,26 @@ ul li{
 }
 .wei-hongbao-tc .con-no{
   width: 100%;
-  height: 56%;
+  height: 50%;
   margin-top: 20%;
 }
 .con-no .weip-bj{
   background-image: url(../img/ui_dashang1.png);
   background-repeat: no-repeat;
-  background-size:90% 100%;
+  background-size:100% 100%;
   position: relative;
-  left: 15%;
+  display: inline-block;
+  margin: 0 auto;
+  left: 10%;
   width: 78%;
   height: 100%;
 }
 .con-no .weip-bj span{
-      font-size: 1.8rem;
-      position: absolute;
-      top: 30%;
-      left: 39%;
-      color: #999;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    color: #999;
 }
 
 .con-no .weip-bj p{
@@ -279,13 +300,19 @@ ul li{
   font-size:0.8rem; 
   position: relative;
   top: 72%; 
-  left: 8%;
+  text-align: center;
   color: #fff;
  }
 
 @media screen and (max-width:322px ) {
+
+  .con-no .weip-bj{
+    width: 70%;
+    left: 15%;
+    text-align: center;
+  }
   .con-no .weip-bj p {
-              left: 7%;
+              /*left: 7%;*/
               font-size: 0.7rem;
             }
     
@@ -321,7 +348,7 @@ ul li{
 
 .qianghongdao .qiang-hb{
   width: 100%;
-  height: 56%;
+  height: 50%;
   margin-top: 30%;
 }
 .qiang-hb .weip-bj{
@@ -383,12 +410,18 @@ ul li{
    font-size: 0.7rem;
    margin-left: 2.5%;
 }
+@media screen and (max-width:322px ) {
+.qiang-hb .weip-bj ul{
+  top: 46%;
+}
 
 
+}
 @media screen and (max-width:322px ) {
  .weip-bj ul li {
-               line-height: 1.4rem;
+               line-height: 0.8rem;
                   height: 78%;
+
      }  
   }
 
