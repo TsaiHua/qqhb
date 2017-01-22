@@ -185,7 +185,7 @@ ul li{
   .conter-hongbao .comm-hb{
               height: 12rem;
             }
-         
+
      }
 
 .comm-hb  .qqhb-1-img{
@@ -217,7 +217,7 @@ ul li{
               width: 90%;
                padding-top: 55%;
             }
-         
+
      }
 
 
@@ -299,10 +299,8 @@ ul li{
   width: 100%;
   font-size:0.8rem;
   position: relative;
-  top: 72%; 
   text-align: center;
   top: 72%;
-  /*left: 8%;*/
   color: #fff;
  }
 
@@ -424,10 +422,9 @@ ul li{
  .weip-bj ul li {
                line-height: 0.8rem;
                   height: 78%;
-
+      }
    }  
 
-  }
 
 
 
@@ -518,7 +515,7 @@ ul li{
   margin-left: 10%;
   margin-top: 12%;
   border-radius: 0.3rem;
-  border: solid 2px #fde367; 
+  border: solid 2px #fde367;
 }
 
 
@@ -610,7 +607,7 @@ ul li{
 .pay_choose{
 	margin: 0 auto;
 	width: 84%;
-	height: 26%;
+	height: 23%;
 }
 .imgbox{
 	width: 21.3%;
@@ -637,6 +634,10 @@ ul li{
 	color: #fff;
 	font-size: .6rem;
 }
+.pay_span3{
+	color: #fde367;
+	font-size: .6rem;
+}
 .pay_choose .pay_active{
 border: 2px solid #fde367;
 }
@@ -654,7 +655,7 @@ border: 2px solid #fde367;
 	width: 25%!important;
 }
 .pay_span{
-	margin-top:.5rem;
+	margin-top:.6rem;
 }
 .btn_size{
 	line-height: 1.6rem!important;
