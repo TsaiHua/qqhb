@@ -288,24 +288,21 @@ ul li{
   height: 100%;
 }
 .con-no .weip-bj span{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     position: absolute;
-    top: 30%;
-    left: 39%;
+    top: 32%;
+    left: 44%;
     color: #999;
 }
 
-.con-no .weip-bj p{
+.con-no .weip-bj .pcla1{
   width: 100%;
   font-size:0.8rem;
   position: relative;
-<<<<<<< HEAD
   top: 72%; 
   text-align: center;
-=======
   top: 72%;
-  left: 8%;
->>>>>>> cbaef59c68c00634b8ba36bf8513c51d967ae8c0
+  /*left: 8%;*/
   color: #fff;
  }
 
@@ -316,7 +313,7 @@ ul li{
     left: 15%;
     text-align: center;
   }
-  .con-no .weip-bj p {
+  .con-no .weip-bj .pcla1{
               /*left: 7%;*/
               font-size: 0.7rem;
             }
@@ -406,7 +403,7 @@ ul li{
 
 .weip-bj ul li{
    display: inline-block;
-   
+
    width: 25%;
    height: 98%;
    text-align: center;
@@ -427,13 +424,11 @@ ul li{
  .weip-bj ul li {
                line-height: 0.8rem;
                   height: 78%;
-<<<<<<< HEAD
 
-     }  
-=======
-     }
->>>>>>> cbaef59c68c00634b8ba36bf8513c51d967ae8c0
+   }  
+
   }
+
 
 
 .weip-bj ul .das-active{
