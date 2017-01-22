@@ -1,7 +1,6 @@
 
 /*公共的样式*/
 
-
 /*去掉p标签默认样式*/
 ul li{
   list-style: none;
@@ -25,7 +24,7 @@ ul li{
 
 /*首页*/
 .shouye-bj{
-    background-size:100% 106%;
+    background-size:100% 100%;
 	  background-image: url(../img/bg.jpg);
 	  background-repeat:no-repeat; 
 	  width: 100%;
@@ -477,10 +476,11 @@ ul li{
   font-size: 0.8rem;
   line-height: 1.7rem;
   text-align: center;
-  background-color: #ff2048;
+  background-color: #ec4f3d;
   margin-left: 10%;
   margin-top: 12%;
   border-radius: 0.3rem;
+  border: solid 2px #fde367; 
 }
 
 
