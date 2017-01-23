@@ -1,4 +1,5 @@
 
+
 /*公共的样式*/
 
 /*去掉p标签默认样式*/
@@ -27,16 +28,36 @@ ul li{
     background-size:100% 100%;
 	  background-image: url(../img/bg.jpg);
 	  background-repeat:no-repeat;
+    background-size: 100% 100%;
 	  width: 100%;
 	  height: 100%;
 }
 
+
 .content .nav-top-con{
   width:100%;
-  height: 16%;
+  height: 17%;
   margin-top: 37%;
 }
 
+ @media screen and (min-width:330px ) {
+  .content .nav-top-con{
+       height: 14%;
+            
+          }
+
+   }
+
+
+@media screen and (min-width:380px ) {
+    .content .nav-top-con{
+         height: 12%;
+              
+            }
+
+     }
+
+  
 
 /*用户图像 余额  发过的红包 */
 
@@ -122,7 +143,7 @@ ul li{
   text-align: center;
   overflow:scroll;
   height: 50%;
-  line-height: 15px;
+  line-height: 16px;
   width: 100%;
   color:#e9b603;
   font-size:0.65rem;
@@ -180,51 +201,91 @@ ul li{
 
 @media screen and (max-width:321px ) {
    .conter-hongbao{
-              height: 12rem;
+              height: 13rem;
             }
   .conter-hongbao .comm-hb{
-              height: 12rem;
+              height: 13rem;
             }
          
      }
 
 .comm-hb  .qqhb-1-img{
-  padding: 0 5%;
   background-image: url(../img/ui_hongbao.png);
   background-repeat: no-repeat;
   display: inline-block;
-  width: 30%;
+  width: 24%;
   height:50%;
   text-align: center;
   background-size:90% auto;
   text-align: center;
-  margin-left: 2.2%;
+  margin-left: 7%;
  }
 
 .comm-hb  .qqhb-1-img a{
   display: inline-block;
-  margin: 0 auto;
-  width: 90%;
+  width:70%;
   color: #fde367;
   height: 100%;
-  padding-top: 60%;
+  padding-top: 35%;
+  margin: 0 auto;
   font-size: 0.7rem;
+  text-align: center;
 
 }
+@media screen and (max-width:362px ) {
+  ..conter-hongbao .comm-hb {
+    height: 12%;
 
-@media screen and (max-width:359px ) {
-  .comm-hb  .qqhb-1-img a{
-              width: 90%;
-               padding-top: 55%;
+  }
+
+    .comm-hb  .qqhb-1-img {
+        height: 47%;
+        font-size: 0.5rem;
+        width: 24%;
+        text-align: center;
+        background-size:90% auto;
+        text-align: center;
+        margin-left: 7%;
+              
             }
-         
+
+     }
+
+
+@media screen and (max-width:362px ) {
+  .comm-hb  .qqhb-1-img a{
+              width: 80%;
+               padding-top: 35%;
+            }
+
+     }
+
+
+
+
+
+
+
+
+@media screen and (max-width:321px ) {
+    .comm-hb  .qqhb-1-img {
+        height: 44%;
+        font-size: 0.5rem;
+        width: 24%;
+        text-align: left;
+        background-size:90% auto;
+        text-align: center;
+        margin-left: 7%;
+              
+            }
+
      }
 
 
 @media screen and (max-width:321px ) {
   .comm-hb  .qqhb-1-img a{
-              width: 100%;
-               padding-top: 55%;
+              width: 90%;
+               padding-top: 30%;
             }
 
      }
@@ -236,12 +297,17 @@ ul li{
   width: 100%;
   height: 6rem;
   text-align: center;
-  margin-top:2rem;
-  /*padding-top: 1rem;*/
+  margin-top:0rem;
 }
 
 
-@media screen and (max-width:340px ) {
+
+@media screen and (min-width:380px ) {
+  .btn-con{
+              margin-top:1rem;
+        }
+  }
+@media screen and (min-width:380px ) {
   .btn-con{
               margin-top:1rem;
         }
@@ -254,8 +320,8 @@ ul li{
 
 
 @media screen and (max-width:321px ) {
-  .btn-con {
-             margin-top: 1.6rem;
+  .btn-con{
+             margin-top: 0rem;
             }
 
   }
@@ -283,29 +349,26 @@ ul li{
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  left: 10%;
-  width: 78%;
+  left: 15%;
+  width: 70%;
   height: 100%;
 }
 .con-no .weip-bj span{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     position: absolute;
     top: 30%;
-    left: 39%;
+    left: 44%;
     color: #999;
 }
 
-.con-no .weip-bj p{
+.con-no .weip-bj .pcla1{
   width: 100%;
   font-size:0.8rem;
   position: relative;
-<<<<<<< HEAD
   top: 72%; 
   text-align: center;
-=======
   top: 72%;
-  left: 8%;
->>>>>>> cbaef59c68c00634b8ba36bf8513c51d967ae8c0
+  /*left: 8%;*/
   color: #fff;
  }
 
@@ -316,7 +379,7 @@ ul li{
     left: 15%;
     text-align: center;
   }
-  .con-no .weip-bj p {
+  .con-no .weip-bj .pcla1{
               /*left: 7%;*/
               font-size: 0.7rem;
             }
@@ -406,7 +469,6 @@ ul li{
 
 .weip-bj ul li{
    display: inline-block;
-   
    width: 25%;
    height: 98%;
    text-align: center;
@@ -414,30 +476,26 @@ ul li{
    border-radius: 0.3rem;
    line-height: 1.9rem;
    font-size: 0.7rem;
-   margin-left: 2.5%;
+   margin-left: 2.9%;
 }
 @media screen and (max-width:322px ) {
 .qiang-hb .weip-bj ul{
   top: 46%;
 }
 
-
 }
 @media screen and (max-width:322px ) {
  .weip-bj ul li {
                line-height: 0.8rem;
                   height: 78%;
-<<<<<<< HEAD
+    }  
 
-     }  
-=======
-     }
->>>>>>> cbaef59c68c00634b8ba36bf8513c51d967ae8c0
-  }
+}
+
 
 
 .weip-bj ul .das-active{
-  border: 2px solid #fed40d;
+   border: 2px #fed40d solid;
 }
 
 
